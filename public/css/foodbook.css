@@ -20,6 +20,7 @@ body {
     margin: auto;
     margin-top: 270px;
     margin-bottom: 270px;
+    min-height: 538px;
 }
 
 /* Index Page */
