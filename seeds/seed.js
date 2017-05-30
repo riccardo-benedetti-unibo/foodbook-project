@@ -24,7 +24,7 @@ unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/
             newRecipe.image = parsed.recipes[i].image;
             newRecipe.instructions = parsed.recipes[i].instructions;
             newRecipe.likes = 0;
-
+ 
             for (j = 0; j < parsed.recipes[i].extendedIngredients.length; j++) {
                 var ingr = new Ingredient();
 
