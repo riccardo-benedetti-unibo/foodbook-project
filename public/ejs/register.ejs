@@ -1,0 +1,137 @@
+<!-- views/register.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Registration</title>
+	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+	<div class="formContainer">
+		<form id="register-form" action="/register" method="post">
+			<ul>
+				<li>
+					<% if (message.length > 0) { %>
+						<div class="alert alert-danger"><strong><%= message %></strong></div>
+					<% } %>
+				</li>
+				<li>
+					<div class="form-group">
+						<div class="fdbLabel">
+							<strong><label for="completename">Complete name: </label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<input type="text" class="form-control" name="completename" required>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="form-group">
+						<div class="fdbLabel">
+							<strong><label for="email">Email: </label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<input type="text" class="form-control" name="email" required>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="form-group">
+						<div class="fdbLabel">
+							<strong><label for="password">Password: </label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<input type="password" class="form-control" name="password" required>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="form-group">
+						<div class="fdbLabel">
+							<strong><label for="password2">Confirm Password: </label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<input type="password" class="form-control" name="password2" required>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="form-group">
+						<div class="fdbLabel">
+							<strong><label for="birthyear">Birth Year: </label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<select name="birthyear" class="form-control" id="birthyear" required></select>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="form-group">
+						<div class="fdbRadio">
+							<input type="radio" name="gender" id="genderM" value="male" checked/>
+							<label for="genderM">Male</label>
+						</div>
+						<div class="fdbRadio">
+							<input type="radio" name="gender" id="genderF" value="female"/>
+							<label for="genderF">Female</label>
+						</div>
+					</div>
+				</li>
+				<li>
+					<!----- Register ----------------------------------------------------------->
+					<div class="fdbButton" style="background-color:#04B404">
+						<a href="#" onclick="if(validateForm()){ document.getElementById('register-form').submit();}">Submit</a>
+					</div>
+					<div class="fdbButton" style="background-color:#DF0101">
+						<a href="/">Back to Home</a>
+					</div>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+</body>
+
+<script>
+    var min = new Date().getFullYear()-99,
+        max = new Date().getFullYear()-9,
+        select = document.getElementById('birthyear');
+
+    var opt = document.createElement('option');
+    opt.value = -1;
+    opt.innerHTML = 'Select Year';
+    select.appendChild(opt);
+
+    for (var i = max; i>=min; i--){
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.innerHTML = i;
+        select.appendChild(opt);
+    }
+</script>
+
+<script>
+    function validateForm() {
+        var completename = document.forms["register-form"]["completename"].value;
+        var email = document.forms["register-form"]["email"].value;
+        var password = document.forms["register-form"]["password"].value;
+        var password2 = document.forms["register-form"]["password2"].value;
+        var birthyear = document.forms["register-form"]["birthyear"].value;
+        var gender = document.forms["register-form"]["gender"].value;
+        if (completename == "" || email == "" || password == ""  || password2 == "") {
+            alert("All fields must be filled out");
+            return false;
+        }
+        if (password != password2) {
+            alert("Mismatch between password fields");
+            return false;
+		}
+        if (birthyear == -1) {
+            alert("Select a valid birth year value");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</html>

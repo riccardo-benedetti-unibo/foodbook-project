@@ -1,0 +1,131 @@
+<!-- views/mainpage.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Recipe Dashboard</title>
+	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="javascript:init()">
+<div class="container">
+	<div class="menuContainer">
+		<ul>
+			<li>
+				<a href="/mainpage">RecipeDashboard</a>
+			</li>
+			<% if(user){ %>
+			<li>
+				<a href="/cookbook">MyCookbook</a>
+			</li>
+            <% } %>
+			<li>
+				<a href="/analytics">Analytics</a>
+			</li>
+			<li>
+                <% if(user){ %>
+				<a href="/logout">Logout</a>
+                <% } else { %>
+				<a href="/">SignIn</a>
+                <% } %>
+			</li>
+            <% if(user){ %>
+			<text style="float:right;">
+				<text>Logged as:</text>
+				<text><b><%= user %></b></text>
+			</text>
+            <% } %>
+		</ul>
+		<ul>
+			<text>
+				<form method="get" action="/mainpage">
+					<strong> Search by ingredient:   </strong>
+					<input type="text" id="searchInput" class="searchInput" name="keywords" maxlength="120"><input type="submit" value="SEARCH" class="searchButton">
+				</form>
+			</text>
+		</ul>
+	</div>
+
+	<div class="recipeContainer">
+		<h1><i>Recipe Dashboard</i></h1>
+		<ul>
+		<% recipes.forEach(function(r,i) {%>
+			<li>
+				<form name="form<%= i %>" action="/recipe" method="post">
+					<a href="#" class="recipeLink" onclick="document.forms['form<%= i %>'].submit(); return false;">
+						<% r.ingredients.forEach(function(ingr,j) {%>
+						<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
+						<% }); %>
+						<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
+						<figure>
+							<img src='<%= r.image %>' alt="">
+							<figcaption>
+								<%= r.title %>
+							</figcaption>
+						</figure>
+					</a>
+				</form>
+			</li>
+		<% }) %>
+		</ul>
+
+		<div class="recipeNavPage" id="recipeNavPage">
+			<form name="formPrev" action="/mainpage" method="get">
+				<a href="#" id="aPrev" onclick="document.forms['formPrev'].submit(); return false;">&laquo; Prev</a>
+				<input type="hidden" name="page" value="<%= currentpage-1 %>"/>
+				<input type="hidden" name="keywords" value="<%= keywords %>"/>
+			</form>
+			<% var pages = (npages < 10) ? npages : 9 %>
+			<% for(var i=0; i<pages; i++){ %>
+				<form name="formPag<%= i %>" action="/mainpage" method="get">
+					<a href="#" id="aPag<%= i %>" onclick="document.forms['formPag<%= i %>'].submit(); return false;"></a>
+					<input id="iPag<%= i %>" type="hidden" name="page"/>
+					<input type="hidden" name="keywords" value="<%= keywords %>"/>
+				</form>
+			<% } %>
+			<form name="formNext" action="/mainpage" method="get">
+				<a href="#" id="aNext" onclick="document.forms['formNext'].submit(); return false;">Next &raquo;</a>
+				<input type="hidden" name="page" value="<%= currentpage+1 %>"/>
+				<input type="hidden" name="keywords" value="<%= keywords %>"/>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+
+<script>
+    function init() {
+        document.getElementById('searchInput').value = '<% keywords %>';
+
+        var currentPage = +'<%=currentpage%>';
+        var nPages = +'<%=npages%>';
+
+        if(currentPage == 1){
+            document.getElementById('aPrev').className = 'not-active';
+		}
+		if(currentPage == nPages){
+            document.getElementById('aNext').className = 'not-active';
+		}
+
+        var fromPage = 1, toPage;
+		if(nPages < 10){
+		    toPage = nPages;
+        } else {
+		    if(currentPage > 4){
+		        fromPage = currentPage - 4;
+			}
+            toPage = fromPage + 8;
+            if(toPage > nPages){
+                toPage = nPages;
+            }
+		}
+
+		for(var i = fromPage; i <= toPage; i++){
+		    document.getElementById('iPag'+(i-fromPage)).value = i;
+            document.getElementById('aPag'+(i-fromPage)).innerText = i;
+            if(i == currentPage){
+                document.getElementById('aPag'+(i-fromPage)).className = 'active';
+			}
+		}
+    }
+</script>
+</html>

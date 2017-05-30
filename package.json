@@ -1,0 +1,29 @@
+{
+  "name": "demeter-app",
+  "version": "1.0.0",
+  "description": "A web application to discover new recipes from all around the world",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "unirest": "latest",
+    "body-parser": "^1.13.3",
+    "cookie-parser": "^1.4.3",
+    "morgan": "^1.7.0",
+    "express": "latest",
+    "express-session": "^1.14.2",
+    "mongodb": "^2.1.6",
+    "mongoose": "latest",
+    "mongoose-simple-random": "latest",
+    "bcrypt-nodejs": "latest",
+    "passport": "^0.3.2",
+    "connect-flash": "^0.1.1",
+    "passport-local": "^1.0.0",
+    "passport-facebook": "^2.1.1",
+    "ejs": "^2.5.2",
+    "fs": "latest"
+  }
+}
+

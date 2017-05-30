@@ -1,0 +1,76 @@
+<!-- views/signin.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+	<div class="formContainer">
+		<form id="signin-form" action="/signin" method="post">
+			<ul>
+				<li>
+					<% if (message.length > 0) { %>
+						<div class="alert alert-danger"><strong><%= message %></strong></div>
+					<% } %>
+				</li>
+				<li>
+				<!----- Email --------------------------------------------------------------->
+					<div class="form-group">
+						<div class="fdbLabel" style="margin-right: 15px">
+							<strong><label for="email">Email:</label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<input type="email" class="form-control" name="email" required>
+						</div>
+
+					</div>
+				</li>
+				<li>
+				<!----- Password ------------------------------------------------------------>
+					<div class="form-group">
+						<div class="fdbLabel" style="margin-right: 15px">
+							<strong><label for="password">Password:</label></strong>
+						</div>
+						<div class="fdbTextbox">
+							<input type="password" class="form-control" name="password" required>
+						</div>
+					</div>
+				</li>
+				<li>
+					<!----- Sign In ----------------------------------------------------------->
+					<div class="fdbButton" style="background-color:#04B404">
+						<a href="#" onclick="validateForm(); document.getElementById('signin-form').submit();">Sign In</a>
+					</div>
+					<div class="fdbButton" style="background-color:#DF0101">
+						<a href="/">Back to Home</a>
+					</div>
+				</li>
+			</ul>
+		</form>
+
+		<ul>
+			<li>
+				<strong>
+					<label>Need a Foodbook account? </label>
+					<a href="/register" style="color: brown; background-color: burlywood"><b>REGISTER</b></a>
+				</strong>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+
+<script>
+    function validateForm() {
+        var email = document.forms["signin-form"]["email"].value;
+        var password = document.forms["signin-form"]["password"].value;
+        if (email == "" || password == "") {
+            alert("EMAIL and PASSWORD must be filled out");
+            return false;
+        }
+    }
+</script>
+</html>

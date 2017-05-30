@@ -1,0 +1,139 @@
+<!-- views/analytics.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Foodbook Analytics</title>
+	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+	<div class="menuContainer">
+		<ul>
+			<li>
+				<a href="/mainpage">RecipeDashboard</a>
+			</li>
+            <% if(user){ %>
+			<li>
+				<a href="/cookbook">MyCookbook</a>
+			</li>
+            <% } %>
+			<li>
+				<a href="/analytics">Analytics</a>
+			</li>
+			<li>
+                <% if(user){ %>
+				<a href="/logout">Logout</a>
+                <% } else { %>
+				<a href="/">SignIn</a>
+                <% } %>
+
+			</li>
+            <% if(user){ %>
+			<text style="float:right;">
+				<text>Logged as:</text>
+				<text><b><%= user %></b></text>
+			</text>
+            <% } %>
+		</ul>
+	</div>
+
+	<div class="fdbgraph">
+		<% recipeInCookbook.forEach(function(ric,i) {%>
+			<input type="hidden" class="recipeInCookbook" name="recipeInCookbook" recipename="<%= ric.name %>"  cookbooks="<%= ric.added %>" value="<%= ric %>" />
+		<% }); %>
+		<div id="ric_graph"></div>
+
+        <% recipeRating.forEach(function(rr,i) {%>
+			<input type="hidden" class="recipeRating" name="recipeRating" recipename="<%= rr.name %>"  rating="<%= rr.rating %>" value="<%= rr %>" />
+        <% }); %>
+		<div id="rr_graph"></div>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawBasic);
+    var recipeInCookbook = document.getElementsByClassName('recipeInCookbook');
+
+    function drawBasic() {
+        var recipesData = new Array();
+        recipesData.push(['Recipes', 'Cookbooks']);
+        for(var r=0; r<recipeInCookbook.length; r++){
+            recipesData.push([recipeInCookbook[r].getAttribute("recipename"), parseInt(recipeInCookbook[r].getAttribute("cookbooks"))]);
+        };
+        recipesData.sort(function(a, b){return b[1]-a[1]});
+        var data = google.visualization.arrayToDataTable(recipesData);
+
+        var options = {
+            title: 'TOP 10 POPULAR RECIPES IN COOKBOOKS',
+            backgroundColor: {
+                fill:'transparent',
+                stroke: 'rosybrown',
+                strokeWidth: 3
+			},
+			height : 600,
+            bar: {
+                groupWidth: "70%"
+			},
+            hAxis: {
+                title: '',
+                minValue: 0
+            },
+            vAxis: {
+                title: ''
+            },
+			colors : ['rosybrown']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('ric_graph'));
+
+        chart.draw(data, options);
+    }
+</script>
+
+<script type="text/javascript">
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawBasic);
+    var recipeRating = document.getElementsByClassName('recipeRating');
+
+    function drawBasic() {
+        var recipeData = new Array();
+        recipeData.push(['Recipes', 'Ratings',]);
+        for(var i=0; i<recipeRating.length; i++){
+            recipeData.push([recipeRating[i].getAttribute("recipename"), parseInt(recipeRating[i].getAttribute("rating"))]);
+        };
+        recipeData.sort(function(a, b){return b[1]-a[1]});
+        var data = google.visualization.arrayToDataTable(recipeData);
+
+        var options = {
+            backgroundColor: {
+                fill:'transparent',
+                stroke: 'rosybrown',
+                strokeWidth: 3
+            },
+            height : 600,
+            bar: {
+                groupWidth: "70%"
+            },
+            hAxis: {
+                title: '',
+                minValue: 0,
+				maxValue: 5
+            },
+            vAxis: {
+                title: ''
+            },
+            colors : ['rosybrown']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('rr_graph'));
+
+        chart.draw(data, options);
+    }
+</script>
+
+</html>
