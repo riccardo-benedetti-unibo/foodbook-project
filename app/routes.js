@@ -250,7 +250,7 @@ module.exports = function(app, passport) {
             } else {
                 var rr = [];
                 results.forEach(function (rec) {
-                    rr.push({"name" : rec.title, "added" : rec.likes }); 
+                    rr.push({"name" : rec.title, "added" : rec.likes });
                 });
                 recipeRating = rr;
                 doRender();
