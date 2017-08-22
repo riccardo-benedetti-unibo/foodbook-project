@@ -71,13 +71,10 @@ body {
 }
 
 .indexPage a {
-    width: 50%;
-    height: 100px;
-    padding: 20px;
-    vertical-align:middle;
-    display: table-cell;
-    font-size: 1.25em;
-    border: 10px;
+    width: 80%;
+    padding: 15%;
+    display: inline-block;
+    font-size: 150%;
     border-radius: 100%;
 }
 
