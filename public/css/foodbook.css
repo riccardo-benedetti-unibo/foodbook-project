@@ -39,8 +39,8 @@ body {
 }
 
 .indexPage a {
-    width: 200px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
     padding: 20px;
     vertical-align:middle;
     display: table-cell;
