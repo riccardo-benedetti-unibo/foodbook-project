@@ -16,10 +16,11 @@ body {
 
 .container {
     width: 67%;
+    max-height: 1000px;
     background: transparent;
     margin: auto;
-    margin-top: 270px;
-    margin-bottom: 270px;
+    margin-top: 27%;
+    margin-bottom: 27%;
 }
 
 /* Index Page */
