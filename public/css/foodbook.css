@@ -16,7 +16,8 @@ body {
 
 .container {
     width: 67%;
-    max-height: 1000px;
+    height: auto;
+    max-height: 800px;
     background: transparent;
     margin: auto;
     margin-top: 27%;
