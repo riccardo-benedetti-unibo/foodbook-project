@@ -40,8 +40,8 @@ body {
 
 .indexPage a {
     width: 50%;
-    height: 20%;
-    padding: 3%;
+    height: 100px;
+    padding: 20px;
     vertical-align:middle;
     display: table-cell;
     font-size: 1.25em;
