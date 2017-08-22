@@ -51,6 +51,7 @@
 
 .row::after {
     content: "";
+    clear: both;
     display: table;
 }
 
@@ -74,11 +75,11 @@ body {
 
 .container {
     width: 67%;
-    min-height: 600px;
     background: transparent;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-left: 18%;
+    margin-right: 28%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     display: flex;
 }
 
