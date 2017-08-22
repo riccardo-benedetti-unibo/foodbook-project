@@ -52,6 +52,7 @@
 .row::after {
     content: "";
     clear: both;
+    display: inline-block;
 }
 
 /* Background settings */
@@ -80,7 +81,6 @@ body {
     margin-right: 17%;
     margin-top: 15%;
     margin-bottom: 15%;
-    display: flex;
 }
 
 /* Index Page */
