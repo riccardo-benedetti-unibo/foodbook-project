@@ -16,12 +16,11 @@ body {
 
 .container {
     width: 67%;
-    height: auto;
-    max-height: 800px;
+    min-height: 600px;
     background: transparent;
     margin: auto;
-    margin-top: 27%;
-    margin-bottom: 27%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 /* Index Page */
