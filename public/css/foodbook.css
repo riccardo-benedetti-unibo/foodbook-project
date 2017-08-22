@@ -78,6 +78,16 @@ body {
     border-radius: 100%;
 }
 
+@media only screen and (orientation: landscape) {
+    .indexPage a {
+        width: 80%;
+        padding: 15%;
+        display: inline-block;
+        font-size: 150%;
+        border-radius: 100%;
+    }
+}
+
 /* Menù Container */
 
 .menuContainer ul {
