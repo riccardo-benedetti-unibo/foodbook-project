@@ -75,7 +75,7 @@ body {
 
 .container {
     width: 66%;
-    min-height: -webkit-fill-available;
+    min-height: 520px;
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
