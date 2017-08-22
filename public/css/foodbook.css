@@ -92,7 +92,7 @@ body {
 
 .indexPage a {
     padding: 15%;
-    font-size: 150%;
+    font-size: 100%;
     border-radius: 100%;
     display: flex;
 }
