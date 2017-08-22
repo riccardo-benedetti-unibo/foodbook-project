@@ -41,7 +41,7 @@ body {
     background-image: url(../img/bg-top.gif), url(../img/bg-frame-left.gif), url(../img/bg-frame-right.gif), url(../img/bg-bottom.gif);
     background-repeat: no-repeat, repeat-y, repeat-y, no-repeat;
     background-position: center top, left top, right top, center bottom;
-    background-size: 40% auto, 17% auto, 17% auto, 70% auto;
+    background-size: 40% auto, 16.66% auto, 16.66% auto, 71% auto;
 }
 
 /* Main container */
