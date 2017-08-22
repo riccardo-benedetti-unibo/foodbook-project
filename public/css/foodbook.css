@@ -17,6 +17,7 @@ body {
 .container {
     width: 67%;
     background: transparent;
+    margin: auto;
     margin-top: 270px;
     margin-bottom: 270px;
 }
@@ -33,11 +34,11 @@ body {
 }
 
 .indexPage li {
-    margin: 15px;
+    margin: 3%;
 }
 
 .indexPage a {
-    width: 200px;
+    width: 50%;
     height: 100px;
     padding: 20px;
     vertical-align:middle;
