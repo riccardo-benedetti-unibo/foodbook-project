@@ -62,15 +62,11 @@ body {
     background-image: url(../img/bg-top.gif), url(../img/bg-frame-left.gif), url(../img/bg-frame-right.gif), url(../img/bg-bottom.gif);
     background-repeat: no-repeat, repeat-y, repeat-y, no-repeat;
     background-position: center top, left top, right top, center bottom;
-    background-size: 75% auto, 16.66% auto, 16.66% auto, 70% auto;
+    background-size: 70% auto, 16.66% auto, 16.66% auto, 70% auto;
 }
 
 @media only screen and (min-width: 600px), screen and (min-width: 768px) {
     body {
-        background-color: beige;
-        background-image: url(../img/bg-top.gif), url(../img/bg-frame-left.gif), url(../img/bg-frame-right.gif), url(../img/bg-bottom.gif);
-        background-repeat: no-repeat, repeat-y, repeat-y, no-repeat;
-        background-position: center top, left top, right top, center bottom;
         background-size: 40% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
 }
