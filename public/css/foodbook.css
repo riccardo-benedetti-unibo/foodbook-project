@@ -75,6 +75,7 @@ body {
     margin: auto;
     margin-top: 15%;
     margin-bottom: 15%;
+    display: flex;
 }
 
 /* Index Page */
