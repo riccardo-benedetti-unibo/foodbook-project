@@ -18,9 +18,7 @@ body {
     width: 67%;
     background: transparent;
     margin: auto;
-    margin-top: 270px;
-    margin-bottom: 270px;
-    min-height: 538px;
+    
 }
 
 /* Index Page */
@@ -39,8 +37,8 @@ body {
 }
 
 .indexPage a {
-    width: 30%;
-    height: 30%;
+    width: 200px;
+    height: 100px;
     padding: 20px;
     vertical-align:middle;
     display: table-cell;
