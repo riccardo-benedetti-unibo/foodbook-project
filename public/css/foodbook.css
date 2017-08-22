@@ -47,7 +47,6 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
 }
 
 .row::after {
@@ -83,14 +82,6 @@ body {
 .indexPage {
     padding: 2%;
     text-align: center;
-}
-
-.indexPage ul {
-    display: inline-grid;
-}
-
-.indexPage li {
-    margin: 3%;
 }
 
 .indexPage a {
