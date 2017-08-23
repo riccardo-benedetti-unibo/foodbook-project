@@ -11,21 +11,21 @@
 
 <body onload="javascript:init()">
 <div class="container">
-	<div class="row menuContainer">
-		<div class="col-4 col-m-4">
+	<div class="row">
+		<div class="col-4 col-m-4 menuContainer">
 			<a href="/mainpage">RecipeDashboard</a>
 		</div>
 		<% if(user){ %>
-		<div class="col-5 col-m-5">
+		<div class="col-5 col-m-5 menuContainer">
 			<a href="/cookbook">MyCookbook</a>
 		</div>
-		<div class="col-6 col-m-6">
+		<div class="col-6 col-m-6 menuContainer">
 			<a href="/analytics">Analytics</a>
 		</div>
-		<div class="col-7 col-m-7">
+		<div class="col-7 col-m-7 menuContainer">
 			<a href="/logout">Logout</a>
 		</div>
-		<div class="col-12 col-m-12">
+		<div class="col-12 col-m-12 menuContainer">
 			<text style="float:right;">
 				<text>Logged as:</text>
 				<text><b><%= user %></b></text>

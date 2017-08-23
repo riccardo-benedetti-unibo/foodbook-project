@@ -105,12 +105,6 @@ body {
 
 /* Menù Container */
 
-.menuContainer ul {
-    border-style: ridge;
-    border-color: rosybrown;
-    border-width: 3px;
-}
-
 .menuContainer div {
     float: left;
     width: 15%;
