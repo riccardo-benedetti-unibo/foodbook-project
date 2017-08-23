@@ -11,33 +11,36 @@
 
 <body onload="javascript:init()">
 <div class="container">
-	<div class="menuContainer">
-		<ul>
-			<li>
-				<a href="/mainpage">RecipeDashboard</a>
-			</li>
-			<% if(user){ %>
-			<li>
-				<a href="/cookbook">MyCookbook</a>
-			</li>
-            <% } %>
-			<li>
-				<a href="/analytics">Analytics</a>
-			</li>
-			<li>
-                <% if(user){ %>
-				<a href="/logout">Logout</a>
-                <% } else { %>
-				<a href="/">SignIn</a>
-                <% } %>
-			</li>
-            <% if(user){ %>
+	<div class="row menuContainer">
+		<div class="col-4 col-m-4">
+			<a href="/mainpage">RecipeDashboard</a>
+		</div>
+		<% if(user){ %>
+		<div class="col-5 col-m-5">
+			<a href="/cookbook">MyCookbook</a>
+		</div>
+		<div class="col-6 col-m-6">
+			<a href="/analytics">Analytics</a>
+		</div>
+		<div class="col-7 col-m-7">
+			<a href="/logout">Logout</a>
+		</div>
+		<div class="col-12 col-m-12">
 			<text style="float:right;">
 				<text>Logged as:</text>
 				<text><b><%= user %></b></text>
 			</text>
-            <% } %>
-		</ul>
+		</div>
+        <% } else { %>
+		<div class="col-5 col-m-5">
+			<a href="/analytics">Analytics</a>
+		</div>
+		<div class="col-6 col-m-6">
+			<a href="/">SignIn</a>
+		</div>
+		<% } %>
+	</div>
+
 		<ul>
 			<text>
 				<form method="get" action="/mainpage">
