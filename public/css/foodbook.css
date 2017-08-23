@@ -99,10 +99,13 @@ body {
 }
 
 .indexPage a {
-    padding: 15%;
     font-size: 100%;
     border-radius: 100%;
     display: flex;
+}
+
+.indexPage [class*="col-"]{
+    padding: 15px;
 }
 
 @media only screen and (min-width: 600px), screen and (min-width: 768px) {
