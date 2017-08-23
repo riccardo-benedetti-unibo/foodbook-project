@@ -55,6 +55,7 @@
     border-style: ridge;
     border-color: rosybrown;
     border-width: 3px;
+    overflow: auto;
 }
 
 .row::after {
