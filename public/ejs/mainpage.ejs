@@ -41,6 +41,12 @@
 			</div>
             <% } %>
 			<div class="icon" style="float: right; border: none;">
+                <% if(user){ %>
+					<text>
+						Logged as:</br>
+						<b><%= user %></b>
+					</text>
+                <% } %>
 				<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
 			</div>
 		</div>
