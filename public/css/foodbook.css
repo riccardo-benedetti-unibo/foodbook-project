@@ -81,7 +81,7 @@ body {
     margin-right: 17%;
     margin-top: 15%;
     margin-bottom: 15%;
-    display: inline-flex;
+    display: grid;
 }
 
 /* Index Page */
@@ -119,11 +119,12 @@ body {
 
 .menuContainer form {
     float:left;
-    display: inline-flex;
+    display: inline-block;
     padding: 20px;
 }
 
 .menuContainer text {
+    display: table-header-group;
     color: brown;
     text-align: right;
     margin-right: 1%;
