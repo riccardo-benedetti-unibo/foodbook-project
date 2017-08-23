@@ -45,6 +45,9 @@
 }
 
 [class*="col-"] {
+    border-style: ridge;
+    border-color: rosybrown;
+    border-radius: 10%;
     float: left;
     padding: 15px;
 }
@@ -53,6 +56,9 @@
     content: "";
     clear: both;
     display: table;
+    border-style: ridge;
+    border-color: rosybrown;
+    border-width: 3px;
 }
 
 /* Background settings */
@@ -104,20 +110,6 @@ body {
 }
 
 /* Menù Container */
-
-.row {
-    border-style: ridge;
-    border-color: rosybrown;
-    border-width: 3px;
-}
-
-.menuContainer a {
-    float: left;
-    width: 15%;
-    border-style: ridge;
-    border-color: rosybrown;
-    border-radius: 10%;
-}
 
 .menuContainer a:hover {
     background-color: #e4e4cd;
