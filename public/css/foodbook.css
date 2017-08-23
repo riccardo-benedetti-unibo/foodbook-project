@@ -152,11 +152,11 @@ body {
 
 @media screen and (max-width: 600px) {
     .menuContainer div:not(:first-child) {
-        display: none;
+        display: block;
         border: none;
     }
     .menuContainer [class*="col-"]{
-        width: 50%;
+        width: 60%;
     }
     .menuContainer div.icon {
         float: right;
