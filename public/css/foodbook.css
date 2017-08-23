@@ -155,7 +155,6 @@ body {
         display: none;
     }
     .menuContainer [class*="col-"]{
-        width: 50%;
         border: none;
     }
     .menuContainer div.icon {
@@ -178,7 +177,6 @@ body {
         top: 0;
     }
     .menuContainer.responsive div {
-        float: none;
         display: block;
         text-align: left;
     }
