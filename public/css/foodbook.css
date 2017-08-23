@@ -105,7 +105,13 @@ body {
 
 /* Menù Container */
 
-.menuContainer a {
+.menuContainer row {
+    border-style: ridge;
+    border-color: rosybrown;
+    border-width: 3px;
+}
+
+.menuContainer div {
     float: left;
     width: 15%;
     border-style: ridge;
@@ -113,7 +119,7 @@ body {
     border-radius: 10%;
 }
 
-.menuContainer a:hover {
+.menuContainer div:hover {
     background-color: #e4e4cd;
 }
 
