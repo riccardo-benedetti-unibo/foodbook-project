@@ -114,13 +114,13 @@ body {
 
 /* Menù Container */
 
-.menuContainer div a {
+.menuContainer [class*="col-"] a {
     color: brown;
     text-align: center;
     padding: 15px;
 }
 
-.menuContainer div a:hover {
+.menuContainer [class*="col-"] a:hover {
     background-color: #e4e4cd;
 }
 
