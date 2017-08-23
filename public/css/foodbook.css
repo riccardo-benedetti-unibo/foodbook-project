@@ -120,12 +120,12 @@ body {
     display: block;
 }
 
-.menuContainer div:hover {
+.menuContainer a:hover {
     background-color: #e4e4cd;
 }
 
 .menuContainer text {
-    display: table-header-group;
+    display: block;
     color: brown;
     text-align: right;
     margin-right: 1%;
