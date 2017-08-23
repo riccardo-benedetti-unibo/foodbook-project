@@ -154,6 +154,8 @@ body {
     .menuContainer div:not(:first-child) {
         display: none;
         border: none;
+    }
+    .menuContainer [class*="col-"]{
         width: 50%;
     }
     .menuContainer div.icon {
