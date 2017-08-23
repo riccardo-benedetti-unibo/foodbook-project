@@ -82,7 +82,6 @@ body {
 /* Main container */
 
 .container {
-    width: 66%;
     min-height: 520px;
     background: transparent;
     margin-left: 17%;
