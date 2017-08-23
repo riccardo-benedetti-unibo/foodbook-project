@@ -52,13 +52,16 @@
     padding: 15px;
 }
 
+.row {
+    border-style: ridge;
+    border-color: rosybrown;
+    border-width: 3px;
+}
+
 .row::after {
     content: "";
     clear: both;
     display: table;
-    border-style: ridge;
-    border-color: rosybrown;
-    border-width: 3px;
 }
 
 /* Background settings */
