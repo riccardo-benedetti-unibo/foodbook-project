@@ -151,10 +151,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer div:not(:first-child) {display: none;}
+    .menuContainer div:not(:first-child) {
+        display: none;
+        width: 50%;
+    }
     .menuContainer div.icon {
         float: right;
         display: block;
+        width: 50%;
     }
 }
 
