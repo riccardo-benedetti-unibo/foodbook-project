@@ -63,12 +63,12 @@
 						<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
 						<% }); %>
 						<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
-						<figure>
+						<picture>
 							<img src='<%= r.image %>' alt="">
 							<figcaption>
 								<%= r.title %>
 							</figcaption>
-						</figure>
+						</picture>
 					</a>
 				</form>
 			</li>
