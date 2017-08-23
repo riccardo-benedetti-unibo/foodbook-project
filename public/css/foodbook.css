@@ -73,7 +73,7 @@ body {
     background-size: 65% auto, 16.66% auto, 16.66% auto, 70% auto;
 }
 
-@media only screen and (min-width: 600px), screen and (min-width: 768px) {
+@media only screen and (min-width: 600px), screen and (min-width: 768px), screen and (orientation: landscape) {
     body {
         background-size: 40% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
@@ -109,7 +109,7 @@ body {
     padding: 15px;
 }
 
-@media only screen and (min-width: 600px), screen and (min-width: 768px) {
+@media only screen and (min-width: 600px), screen and (min-width: 768px), screen and (orientation: landscape) {
     .indexPage a {
         font-size: 200%;
     }
