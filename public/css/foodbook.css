@@ -151,8 +151,8 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer a:not(:first-child) {display: none;}
-    .menuContainer a.icon {
+    .menuContainer div:not(:first-child) {display: none;}
+    .menuContainer div.icon {
         float: right;
         display: block;
     }
@@ -165,7 +165,7 @@ body {
         right: 0;
         top: 0;
     }
-    .menuContainer.responsive a {
+    .menuContainer.responsive div {
         float: none;
         display: block;
         text-align: left;
