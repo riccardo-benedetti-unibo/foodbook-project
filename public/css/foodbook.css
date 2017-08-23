@@ -160,7 +160,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .menuContainer.responsive {position: relative;}
-    .menuContainer.responsive a.icon {
+    .menuContainer.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
