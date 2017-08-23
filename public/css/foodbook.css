@@ -139,6 +139,7 @@ body {
     text-align: center;
     padding: 15px;
     display: block;
+    float: left;
 }
 
 .menuContainer a:hover {
