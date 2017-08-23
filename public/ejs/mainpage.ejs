@@ -11,7 +11,7 @@
 
 <body onload="javascript:init()">
 <div class="container">
-	<div class="row menuContainer">
+	<div class="row menuContainer" id="menuMobile">
 		<div class="col-2 col-m-2">
 			<a href="/mainpage">RecipeDashboard</a>
 		</div>
@@ -135,6 +135,17 @@
                 document.getElementById('aPag'+(i-fromPage)).className = 'active';
 			}
 		}
+    }
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("menuMobile");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     }
 </script>
 </html>
