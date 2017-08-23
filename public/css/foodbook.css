@@ -105,7 +105,7 @@ body {
 
 /* Menù Container */
 
-.menuContainer div {
+.menuContainer a {
     float: left;
     width: 15%;
     border-style: ridge;
@@ -113,7 +113,7 @@ body {
     border-radius: 10%;
 }
 
-.menuContainer div:hover {
+.menuContainer a:hover {
     background-color: #e4e4cd;
 }
 
