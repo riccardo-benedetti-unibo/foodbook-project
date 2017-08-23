@@ -26,12 +26,11 @@
 			<div class="col-2 col-m-8">
 				<a href="/logout">Logout</a>
 			</div>
-			<div class="col-4 col-m-12 icon" style="float: right; border: none;">
+			<div class="col-4 col-m-12" style="float: right; border: none;">
 				<text>
 					Logged as:</br>
 					<b><%= user %></b>
 				</text>
-				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 			</div>
             <% } else { %>
 			<div class="col-2 col-m-4">
@@ -40,10 +39,8 @@
 			<div class="col-2 col-m-6">
 				<a href="/">SignIn</a>
 			</div>
-			<div class="col-4 col-m-12" style="float: right; border: none;">
-				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-			</div>
             <% } %>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 	</div>
 
