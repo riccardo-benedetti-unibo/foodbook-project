@@ -12,20 +12,20 @@
 <body onload="javascript:init()">
 <div class="container">
 	<div class="row">
-		<div class="col-2 col-m-2 menuContainer">
+		<div class="col-2 col-m-2">
 			<a href="/mainpage">RecipeDashboard</a>
 		</div>
 		<% if(user){ %>
-		<div class="col-2 col-m-4 menuContainer">
+		<div class="col-2 col-m-4">
 			<a href="/cookbook">MyCookbook</a>
 		</div>
-		<div class="col-2 col-m-6 menuContainer">
+		<div class="col-2 col-m-6">
 			<a href="/analytics">Analytics</a>
 		</div>
-		<div class="col-2 col-m-8 menuContainer">
+		<div class="col-2 col-m-8">
 			<a href="/logout">Logout</a>
 		</div>
-		<div class="col-2 col-m-12 menuContainer" style="float: right">
+		<div class="col-2 col-m-12" style="float: right">
 			<text style="float:right;">
 				<text>Logged as:</text>
 				<text><b><%= user %></b></text>
@@ -42,7 +42,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-4 col-m-4">
+		<div class="col-1 col-m-4">
 			<text>
 				<form method="get" action="/mainpage">
 					<strong> Search by ingredient:   </strong>
