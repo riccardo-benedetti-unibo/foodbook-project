@@ -12,30 +12,30 @@
 <body onload="javascript:init()">
 <div class="container">
 	<div class="row">
-		<div class="col-1 col-m-1 menuContainer">
+		<div class="col-2 col-m-2 menuContainer">
 			<a href="/mainpage">RecipeDashboard</a>
 		</div>
 		<% if(user){ %>
-		<div class="col-2 col-m-2 menuContainer">
+		<div class="col-2 col-m-4 menuContainer">
 			<a href="/cookbook">MyCookbook</a>
 		</div>
-		<div class="col-3 col-m-3 menuContainer">
+		<div class="col-2 col-m-6 menuContainer">
 			<a href="/analytics">Analytics</a>
 		</div>
-		<div class="col-4 col-m-4 menuContainer">
+		<div class="col-2 col-m-8 menuContainer">
 			<a href="/logout">Logout</a>
 		</div>
-		<div class="col-12 col-m-12 menuContainer">
+		<div class="col-2 col-m-10 menuContainer">
 			<text style="float:right;">
 				<text>Logged as:</text>
 				<text><b><%= user %></b></text>
 			</text>
 		</div>
         <% } else { %>
-		<div class="col-2 col-m-2">
+		<div class="col-2 col-m-4">
 			<a href="/analytics">Analytics</a>
 		</div>
-		<div class="col-3 col-m-3">
+		<div class="col-2 col-m-6">
 			<a href="/">SignIn</a>
 		</div>
 		<% } %>
