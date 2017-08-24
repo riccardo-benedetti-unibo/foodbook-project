@@ -154,10 +154,12 @@ body {
 @media screen and (max-width: 600px) {
     .menuContainer .row div:not(:nth-last-child(-n+2)) {
         display: none;
+        border: none;
     }
     .menuContainer .row div:nth-last-child(2) {
         display: block;
         float: left;
+        border: none;
     }
     .menuContainer [class*="col-"]{
         border: none;
