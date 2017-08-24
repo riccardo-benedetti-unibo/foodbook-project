@@ -152,17 +152,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer .row {
-        border: none;
-    }
-    .menuContainer .row div:not(:nth-last-child(-n+2)) {
+    .menuContainer div:not(:nth-last-child(-n+2)) {
         display: none;
-        border: none;
     }
-    .menuContainer .row div:nth-last-child(2) {
+    .menuContainer div:nth-last-child(2) {
         display: block;
         float: left;
-        border: none;
     }
     .menuContainer [class*="col-"]{
         border: none;
@@ -183,15 +178,15 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer.row.responsive {position: relative;}
-    .menuContainer.row.responsive .icon {
+    .menuContainer.responsive {position: relative;}
+    .menuContainer.responsive .icon {
         position: absolute;
         float: right;
         display: block;
         right: 3px;
         top: 3px;
     }
-    .menuContainer.row.responsive div {
+    .menuContainer.responsive div {
         border: none;
         display: block;
         text-align: left;
