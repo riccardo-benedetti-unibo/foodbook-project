@@ -152,7 +152,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer .row div {
+    .menuContainer .row {
         border: none;
     }
     .menuContainer .row div:not(:nth-last-child(-n+2)) {
