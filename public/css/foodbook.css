@@ -159,32 +159,32 @@ body {
         display: block;
         float: left;
     }
-    .menuContainer.row [class*="col-"]{
+    .menuContainer [class*="col-"]{
         border: none;
     }
-    .menuContainer.row div.icon {
+    .menuContainer div.icon {
         float: right;
         display: block;
     }
-    .menuContainer.row div.a {
+    .menuContainer div.a {
         float: left;
     }
-    .menuContainer.row div.icon.a {
+    .menuContainer div.icon.a {
         float: right;
     }
-    .menuContainer.row br {
+    .menuContainer br {
         display: none;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer.row.responsive {position: relative;}
-    .menuContainer.row.responsive .icon {
+    .menuContainer.responsive {position: relative;}
+    .menuContainer.responsive .icon {
         position: absolute;
         right: 3px;
         top: 3px;
     }
-    .menuContainer.row.responsive div {
+    .menuContainer.responsive div {
         display: block;
         text-align: left;
     }
