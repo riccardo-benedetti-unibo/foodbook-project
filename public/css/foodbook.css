@@ -168,6 +168,9 @@ body {
     .menuContainer div.icon.a {
         float: right;
     }
+    .menuContainer div.text {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 600px) {
