@@ -191,7 +191,8 @@ body {
         top: 25px;
     }
     .menuContainer.responsive div:not(:nth-last-child(2)) {
-        position: absolute;
+        position: relative;
+        display: block;
         float: left;
         text-align: left;
         top: 25px;
