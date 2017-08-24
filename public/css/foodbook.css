@@ -181,10 +181,13 @@ body {
     .menuContainer.row.responsive {position: relative;}
     .menuContainer.row.responsive .icon {
         position: absolute;
+        float: right;
+        display: block;
         right: 3px;
         top: 3px;
     }
     .menuContainer.row.responsive div {
+        border: none;
         display: block;
         text-align: left;
     }
