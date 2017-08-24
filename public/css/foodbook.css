@@ -152,39 +152,39 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer .row div:not(:nth-last-child(-n+2)) {
+    .menuContainer.row div:not(:nth-last-child(-n+2)) {
         display: none;
     }
-    .menuContainer .row div:nth-last-child(2) {
+    .menuContainer.row div:nth-last-child(2) {
         display: block;
         float: left;
     }
-    .menuContainer [class*="col-"]{
+    .menuContainer.row [class*="col-"]{
         border: none;
     }
-    .menuContainer div.icon {
+    .menuContainer.row div.icon {
         float: right;
         display: block;
     }
-    .menuContainer div.a {
+    .menuContainer.row div.a {
         float: left;
     }
-    .menuContainer div.icon.a {
+    .menuContainer.row div.icon.a {
         float: right;
     }
-    .menuContainer br {
+    .menuContainer.row br {
         display: none;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer.responsive {position: relative;}
-    .menuContainer.responsive .icon {
+    .menuContainer.row.responsive {position: relative;}
+    .menuContainer.row.responsive .icon {
         position: absolute;
         right: 3px;
         top: 3px;
     }
-    .menuContainer.responsive div {
+    .menuContainer.row.responsive div {
         display: block;
         text-align: left;
     }
