@@ -190,7 +190,7 @@ body {
         right: 0;
         top: 25px;
     }
-    .menuContainer.responsive div:not(:nth-last-child(2)) {
+    .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
         position: relative;
         display: block;
         float: left;
