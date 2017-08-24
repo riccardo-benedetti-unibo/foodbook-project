@@ -168,8 +168,9 @@ body {
     .menuContainer div.icon.a {
         float: right;
     }
-    .menuContainer div.text {
-        display: flex;
+    .menuContainer div:nth-last-child(2) {
+    float: right;
+    display: block;
     }
 }
 
