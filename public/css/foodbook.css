@@ -188,13 +188,13 @@ body {
         position: absolute;
         float: right;
         right: 0;
-        top: 40px;
+        top: 25px;
     }
     .menuContainer.responsive div:not(:nth-last-child(2)) {
-        display: block;
+        position: absolute;
         float: left;
-        display: block;
         text-align: left;
+        top: 25px;
     }
 }
 
