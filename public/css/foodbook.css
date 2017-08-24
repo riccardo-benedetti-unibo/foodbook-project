@@ -160,8 +160,7 @@ body {
     }
     .menuContainer div.icon {
         float: right;
-        display: inline-flex;
-        width: 100%;
+        display: block;
     }
     .menuContainer div.a {
         float: left;
