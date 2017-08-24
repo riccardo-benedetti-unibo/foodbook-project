@@ -178,13 +178,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer.responsive {position: relative;}
-    .menuContainer.responsive .icon {
+    .menuContainer.row.responsive {position: relative;}
+    .menuContainer.row.responsive .icon {
         position: absolute;
         right: 3px;
         top: 3px;
     }
-    .menuContainer.responsive div {
+    .menuContainer.row.responsive div {
         display: block;
         text-align: left;
     }
