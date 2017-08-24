@@ -157,6 +157,7 @@ body {
     }
     .menuContainer [class*="col-"]{
         border: none;
+        float: left;
     }
     .menuContainer div.icon {
         float: right;
@@ -170,9 +171,6 @@ body {
     }
     .menuContainer br {
         display: none;
-    }
-    .menuContainer div:nth-last-child(2) {
-        display: block;
     }
 }
 
