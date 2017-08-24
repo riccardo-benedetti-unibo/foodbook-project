@@ -155,7 +155,7 @@ body {
     .menuContainer .row div:not(:nth-last-child(-n+2)) {
         display: none;
     }
-    .menuContainer div:nth-last-child(2) {
+    .menuContainer .row div:nth-last-child(2) {
         display: block;
         float: left;
     }
