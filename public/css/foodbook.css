@@ -185,7 +185,7 @@ body {
         right: 3px;
         top: 3px;
     }
-    .menuContainer.responsive div {
+    .menuContainer.responsive div:not(:nth-last-child(2)) {
         border: none;
         display: block;
         text-align: left;
