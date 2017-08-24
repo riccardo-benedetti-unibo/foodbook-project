@@ -151,7 +151,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer div:not(:nth-last-child(-n+2)) {
+    .menuContainer div:not(:nth-last-child(-n+2)), .menuContainer div:not(:first-child) {
         display: none;
     }
     .menuContainer div:nth-last-child(2) {
