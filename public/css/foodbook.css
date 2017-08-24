@@ -152,6 +152,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .menuContainer div:nth-last-child(2) {
+        display: block;
+    }
     .menuContainer div:not(:first-child) {
         display: none;
     }
@@ -167,10 +170,6 @@ body {
     }
     .menuContainer div.icon.a {
         float: right;
-    }
-    .menuContainer div:nth-last-child(2) {
-    float: right;
-    display: block;
     }
 }
 
