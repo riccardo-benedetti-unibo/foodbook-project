@@ -181,14 +181,12 @@ body {
     .menuContainer.responsive div.icon {
         position: absolute;
         float: right;
-        display: block;
+        right: 0;
+        top: 0;
     }
-    .menuContainer.responsive div:nth-last-child(2) {
+    .menuContainer.responsive div {
         display: block;
         float: left;
-    }
-    .menuContainer.responsive div:not(:nth-last-child(2)) {
-        border: none;
         display: block;
         text-align: left;
     }
