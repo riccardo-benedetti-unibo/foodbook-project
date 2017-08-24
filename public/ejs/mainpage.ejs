@@ -13,10 +13,16 @@
 <div class="container">
 	<div class="menuContainer" id="menuMobile">
 		<div class="row">
+            <% if(user){ %>
+			<div class="col-4 col-m-12" style="float: right; border: none;">
+				<text>
+					Logged as:</br>
+					<b><%= user %></b>
+				</text>
+			</div>
 			<div class="col-2 col-m-2">
 				<a href="/mainpage">RecipeDashboard</a>
 			</div>
-            <% if(user){ %>
 			<div class="col-2 col-m-4">
 				<a href="/cookbook">MyCookbook</a>
 			</div>
@@ -26,13 +32,10 @@
 			<div class="col-2 col-m-8">
 				<a href="/logout">Logout</a>
 			</div>
-			<div class="col-4 col-m-12" style="float: right; border: none;">
-				<text>
-					Logged as:</br>
-					<b><%= user %></b>
-				</text>
-			</div>
             <% } else { %>
+			<div class="col-2 col-m-2">
+				<a href="/mainpage">RecipeDashboard</a>
+			</div>
 			<div class="col-2 col-m-4">
 				<a href="/analytics">Analytics</a>
 			</div>

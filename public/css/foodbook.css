@@ -155,9 +155,6 @@ body {
     .menuContainer div:not(:first-child) {
         display: none;
     }
-    .menuContainer div:not(:last-child) {
-        display: none;
-    }
     .menuContainer [class*="col-"]{
         border: none;
     }
