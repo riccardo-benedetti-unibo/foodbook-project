@@ -177,7 +177,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer.responsive {position: relative;}
+    .menuContainer.responsive {
+        position: relative;
+        padding-bottom: 25px;
+    }
     .menuContainer.responsive div:nth-last-child(2) {
         position: absolute;
         float: right;
@@ -196,7 +199,6 @@ body {
         float: left;
         text-align: left;
         top: 25px;
-        bottom: -25px;
     }
 }
 
