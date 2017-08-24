@@ -152,7 +152,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer:first-child div:not(:nth-last-child(2)) {
+    .menuContainer:first-child > div:not(:nth-last-child(2)) {
         display: none;
     }
     .menuContainer [class*="col-"]{
