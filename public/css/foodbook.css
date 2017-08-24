@@ -179,7 +179,7 @@ body {
 @media screen and (max-width: 600px) {
     .menuContainer.responsive {position: relative;}
     .menuContainer.responsive div:nth-last-child(2) {
-        position: absolute;
+        position: relative;
         float: right;
         right: 0;
         top: 0;
