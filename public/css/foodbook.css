@@ -182,8 +182,6 @@ body {
         position: absolute;
         float: right;
         display: block;
-        right: 3px;
-        top: 3px;
     }
     .menuContainer.responsive div:nth-last-child(2) {
         display: block;
