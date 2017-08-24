@@ -177,9 +177,6 @@ body {
     .menuContainer br {
         display: none;
     }
-    .menuContainer row {
-        border: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
