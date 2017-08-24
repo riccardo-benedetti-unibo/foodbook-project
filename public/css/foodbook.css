@@ -155,6 +155,10 @@ body {
     .menuContainer .row div:not(:nth-last-child(2)) {
         display: none;
     }
+    .menuContainer .row div:nth-last-child(2) {
+        display: block;
+        float: left;
+    }
     .menuContainer [class*="col-"]{
         border: none;
     }
