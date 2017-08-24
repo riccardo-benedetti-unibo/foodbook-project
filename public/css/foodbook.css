@@ -56,7 +56,6 @@
     border-color: rosybrown;
     border-width: 3px;
     overflow: auto;
-    display: flex;
 }
 
 .row::after {
