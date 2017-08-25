@@ -154,7 +154,7 @@ body {
     .menuContainer div:not(:nth-last-child(-n+2)) {
         display: none;
     }
-    .menuContainer div:first-child{
+    .menuContainer div:first-child {
         position: relative;
         display: block;
         float: left;
@@ -175,9 +175,6 @@ body {
     }
     .menuContainer div.a {
         float: left;
-    }
-    .menuContainer div.icon.a {
-        float: right;
     }
     .menuContainer br {
         display: none;
