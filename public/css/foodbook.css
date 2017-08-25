@@ -184,9 +184,6 @@ body {
     .menuContainer div.a {
         float: left;
     }
-    .menuContainer br {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
