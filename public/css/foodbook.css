@@ -269,6 +269,10 @@ body {
     display: grid;
 }
 
+.recipeContainer ul {
+    padding: 5px;
+}
+
 .recipeContainer li {
     border: 2px ridge rosybrown;
     border-radius: 10%;
