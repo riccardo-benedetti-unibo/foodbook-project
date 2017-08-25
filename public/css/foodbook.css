@@ -151,7 +151,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer div:not(:nth-last-child(-n+2)), .menuContainer div:not(:first-child) {
+    .menuContainer div:not(:nth-last-child(-n+2)) {
         display: none;
     }
     .menuContainer div:first-child{
@@ -197,13 +197,6 @@ body {
         float: right;
         right: 0;
         top: 48px;
-    }
-    .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
-        position: relative;
-        display: block;
-        float: left;
-        text-align: left;
-        top: 25px;
     }
 }
 
