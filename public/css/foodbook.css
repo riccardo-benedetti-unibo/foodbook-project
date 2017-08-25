@@ -154,16 +154,27 @@ body {
     .menuContainer div:not(:nth-last-child(-n+2)), .menuContainer div:not(:first-child) {
         display: none;
     }
-    .menuContainer div:nth-last-child(2) {
+    .menuContainer div:first-child{
+        position: relative;
+        padding-bottom: 48px;
         display: block;
-        float: left;
+    }
+    .menuContainer div:nth-last-child(2) {
+        position: absolute;
+        float: right;
+        right: 0;
+        top: 0;
+        display: block;
     }
     .menuContainer [class*="col-"]{
         border: none;
     }
     .menuContainer div.icon {
-        float: right;
         display: block;
+        position: absolute;
+        float: right;
+        right: 0;
+        top: 48px;
     }
     .menuContainer div.a {
         float: left;
