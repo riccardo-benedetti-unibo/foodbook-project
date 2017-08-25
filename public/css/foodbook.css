@@ -172,6 +172,10 @@ body {
     }
     .menuContainer div.icon {
         display: block;
+        position: absolute;
+        float: right;
+        right: 0;
+        top: 48px;
     }
     .menuContainer div.a {
         float: left;
