@@ -365,7 +365,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .recipeNavPage {
+        padding: 8%;
+    }
 
+    .recipeNavPage form {
+        display: inline-table;
+    }
 }
 
 /* Form Container and Components (Sign in & Register pages) */
