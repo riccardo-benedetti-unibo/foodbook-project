@@ -325,6 +325,10 @@ body {
     margin: 0 auto;
 }
 
+.recipeNavPage row {
+    display: flex;
+}
+
 .recipeNavPage form {
     display: inline-block;
 }
