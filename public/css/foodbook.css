@@ -151,6 +151,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .menuContainer {
+        position: relative;
+        padding-bottom: 48px;
+    }
     .menuContainer div:not(:nth-last-child(-n+2)) {
         display: none;
     }
