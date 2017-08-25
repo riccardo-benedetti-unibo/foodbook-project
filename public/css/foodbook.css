@@ -198,6 +198,13 @@ body {
         right: 0;
         top: 48px;
     }
+    .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
+        position: relative;
+        display: block;
+        float: left;
+        text-align: left;
+        top: 48px;
+    }
 }
 
 .menuContainer text {
