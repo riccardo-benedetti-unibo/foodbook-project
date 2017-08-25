@@ -597,6 +597,7 @@ strong {
 a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 h1 {
