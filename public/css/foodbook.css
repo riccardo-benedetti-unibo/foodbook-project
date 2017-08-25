@@ -149,6 +149,20 @@ body {
     display: none;
 }
 
+.menuContainer text {
+    display: block;
+    color: brown;
+    text-align: right;
+    padding-right: 3%;
+    padding-top: 2%;
+}
+
+.menuContainer form {
+    float:left;
+    display: inline-block;
+    padding: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .menuContainer {
         position: relative;
@@ -193,20 +207,6 @@ body {
         text-align: left;
         top: 48px;
     }
-}
-
-.menuContainer text {
-    display: block;
-    color: brown;
-    text-align: right;
-    padding-right: 3%;
-    padding-top: 2%;
-}
-
-.menuContainer form {
-    float:left;
-    display: inline-block;
-    padding: 20px;
 }
 
 /* "Search by Ingredient" components */
