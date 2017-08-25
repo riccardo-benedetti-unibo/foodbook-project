@@ -150,10 +150,6 @@ body {
     display: none;
 }
 
-.menuContainer text {
-    text-align: left;
-}
-
 @media screen and (max-width: 600px) {
     .menuContainer {
         position: relative;
