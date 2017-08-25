@@ -65,28 +65,30 @@
 		</div>
 	</div>
 
-	<div class="row recipeContainer">
-		<h1><i>Recipe Dashboard</i></h1>
-		<ul>
-		<% recipes.forEach(function(r,i) {%>
-			<li>
-				<form name="form<%= i %>" action="/recipe" method="post">
-					<a href="#" class="recipeLink" onclick="document.forms['form<%= i %>'].submit(); return false;">
-						<% r.ingredients.forEach(function(ingr,j) {%>
-						<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
-						<% }); %>
-						<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
-						<picture>
-							<img src='<%= r.image %>' alt="">
-							<figcaption>
-								<%= r.title %>
-							</figcaption>
-						</picture>
-					</a>
-				</form>
-			</li>
-		<% }) %>
-		</ul>
+	<div class="row">
+		<div class="recipeContainer">
+			<h1><i>Recipe Dashboard</i></h1>
+			<ul>
+			<% recipes.forEach(function(r,i) {%>
+				<li>
+					<form name="form<%= i %>" action="/recipe" method="post">
+						<a href="#" class="recipeLink" onclick="document.forms['form<%= i %>'].submit(); return false;">
+							<% r.ingredients.forEach(function(ingr,j) {%>
+							<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
+							<% }); %>
+							<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
+							<picture>
+								<img src='<%= r.image %>' alt="">
+								<figcaption>
+									<%= r.title %>
+								</figcaption>
+							</picture>
+						</a>
+					</form>
+				</li>
+			<% }) %>
+			</ul>
+		</div>
 	</div>
 
 	<div class="row recipeNavPage">

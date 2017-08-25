@@ -303,6 +303,14 @@ body {
     transition: transform .2s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+    .recipeContainer h1 {
+        font-size: 30px;
+    }
+}
+
+/* Recipe Navigation Bar */
+
 .recipeNavPage {
     display: flex;
     padding: 4%;
