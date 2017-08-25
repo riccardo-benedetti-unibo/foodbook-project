@@ -170,12 +170,6 @@ body {
     .menuContainer [class*="col-"]{
         border: none;
     }
-    .menuContainer div.icon {
-        display: block;
-    }
-    .menuContainer div.a {
-        float: left;
-    }
     .menuContainer br {
         display: none;
     }
