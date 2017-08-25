@@ -264,8 +264,6 @@ body {
 /* Recipe Container (Main page & MyCookbook page) */
 
 .recipeContainer {
-    border-style: ridge;
-    border-color: rosybrown;
     display: grid;
 }
 
@@ -347,6 +345,10 @@ body {
 
 .recipeNavPage a:hover:not(.active) {
     background-color: rosybrown;
+}
+
+@media screen and (max-width: 600px) {
+
 }
 
 /* Form Container and Components (Sign in & Register pages) */
