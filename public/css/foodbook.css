@@ -168,7 +168,7 @@ body {
     .menuContainer div:nth-last-child(2) {
         position: absolute;
         float: right;
-        right: 0;
+        right: 20px;
         top: 0;
     }
     .menuContainer [class*="col-"]{
@@ -199,6 +199,7 @@ body {
 .menuContainer text {
     display: block;
     color: brown;
+    text-align: right;
     padding-right: 3%;
     padding-top: 2%;
 }
