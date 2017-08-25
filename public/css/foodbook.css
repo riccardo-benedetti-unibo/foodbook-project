@@ -180,7 +180,7 @@ body {
         right: 0;
         top: 48px;
     }
-    .menuContainer div.a {
+    .menuContainer a {
         float: left;
     }
 }
