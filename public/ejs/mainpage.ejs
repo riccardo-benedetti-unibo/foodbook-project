@@ -49,7 +49,7 @@
 			</div>
             <% } %>
 			<div class="icon" style="float: right; border: none;">
-				<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
 			</div>
 		</div>
 	</div>
@@ -157,7 +157,7 @@
 </script>
 
 <script>
-    function myFunction() {
+    function responsiveHandler() {
         var x = document.getElementById("menuMobile");
         if (x.className === "menuContainer") {
             x.className += " responsive";
