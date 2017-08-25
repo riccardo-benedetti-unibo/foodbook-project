@@ -155,14 +155,17 @@ body {
         display: none;
     }
     .menuContainer div:first-child{
+        position: relative;
         display: block;
+        float: left;
+        text-align: left;
+        top: 48px;
     }
     .menuContainer div:nth-last-child(2) {
         position: absolute;
         float: right;
         right: 0;
         top: 0;
-        display: block;
     }
     .menuContainer [class*="col-"]{
         border: none;
