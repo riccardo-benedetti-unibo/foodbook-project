@@ -199,7 +199,6 @@ body {
 .menuContainer text {
     display: block;
     color: brown;
-    text-align: right;
     padding-right: 3%;
     padding-top: 2%;
 }
@@ -601,8 +600,4 @@ h1 {
     font-size: 40px;
     color: rosybrown;
     text-align: center;
-}
-
-text {
-    text-align: left;
 }
