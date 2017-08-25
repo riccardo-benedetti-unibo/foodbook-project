@@ -156,7 +156,7 @@ body {
     }
     .menuContainer div:first-child{
         position: relative;
-        padding-bottom: 48px;
+        top: 48px;
         display: block;
     }
     .menuContainer div:nth-last-child(2) {
