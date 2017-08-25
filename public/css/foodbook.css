@@ -341,7 +341,7 @@ body {
 }
 
 .recipeNavPage form {
-    display: inline-block;
+    display: inline-grid;
 }
 
 .recipeNavPage a {
@@ -367,10 +367,6 @@ body {
 @media screen and (max-width: 600px) {
     .recipeNavPage {
         padding: 8%;
-    }
-
-    .recipeNavPage form {
-        display: inline-block;
     }
 }
 
