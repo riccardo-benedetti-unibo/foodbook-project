@@ -162,6 +162,7 @@ body {
         float: right;
         right: 0;
         top: 0;
+        display: block;
     }
     .menuContainer [class*="col-"]{
         border: none;
