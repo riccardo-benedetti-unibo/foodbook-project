@@ -370,7 +370,7 @@ body {
     }
 
     .recipeNavPage form {
-        display: inline-table;
+        display: inline-block;
     }
 }
 
