@@ -155,8 +155,6 @@ body {
         display: none;
     }
     .menuContainer div:first-child{
-        position: relative;
-        top: 48px;
         display: block;
     }
     .menuContainer div:nth-last-child(2) {
