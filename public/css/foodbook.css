@@ -49,6 +49,7 @@
     border-color: rosybrown;
     border-radius: 10%;
     float: left;
+    overflow: hidden;
 }
 
 .row {
