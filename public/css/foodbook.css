@@ -190,22 +190,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .menuContainer.responsive {
-        position: relative;
-        padding-bottom: 48px;
-    }
-    .menuContainer.responsive div:nth-last-child(2) {
-        position: absolute;
-        float: right;
-        right: 0;
-        top: 0;
-    }
-    .menuContainer.responsive div.icon {
-        position: absolute;
-        float: right;
-        right: 0;
-        top: 48px;
-    }
     .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
         position: relative;
         display: block;
