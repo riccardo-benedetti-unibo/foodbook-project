@@ -325,7 +325,9 @@ body {
     margin: 0 auto;
 }
 
-.recipeNavPage form {display: table;}
+.recipeNavPage form {
+    display: inline-block;
+}
 
 .recipeNavPage a {
     color: brown;
