@@ -150,6 +150,10 @@ body {
     display: none;
 }
 
+.menuContainer text {
+    text-align: left;
+}
+
 @media screen and (max-width: 600px) {
     .menuContainer {
         position: relative;
@@ -168,7 +172,6 @@ body {
     .menuContainer div:nth-last-child(2) {
         position: absolute;
         float: right;
-        text-align: left;
         right: 0px;
         top: 0;
     }
