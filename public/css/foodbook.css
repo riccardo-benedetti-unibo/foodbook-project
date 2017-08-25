@@ -232,6 +232,7 @@ body {
 .search strong {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
+    padding-left: 10%;
 }
 
 .searchInput{
