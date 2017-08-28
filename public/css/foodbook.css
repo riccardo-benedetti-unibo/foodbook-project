@@ -88,6 +88,7 @@ body {
 .container {
     position: absolute; /* needed for footer positioning*/
     height: auto !important; /* real browsers */
+    min-height: 100%; /* real browsers */
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
@@ -112,6 +113,7 @@ body {
     vertical-align: middle;
     text-align: center;
     height: 18vh;
+    width: 50vw;
 }
 
 .indexPage [class*="col-"]{
