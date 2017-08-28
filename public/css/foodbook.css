@@ -105,7 +105,7 @@ body {
 
 .indexPage {
     text-align: center;
-    display: table;
+    display: grid;
 }
 
 .indexPage a {
@@ -124,7 +124,13 @@ body {
 }
 
 @media only screen and (min-width: 850px) {
+    .indexPage {
+        display: inline-block;
+    }
 
+    .indexPage a {
+        font-size: 2vw;
+    }
 }
 
 /* Menù Container */
