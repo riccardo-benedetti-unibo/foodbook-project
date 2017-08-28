@@ -86,9 +86,6 @@ body {
 /* Main container */
 
 .container {
-    position: absolute; /* needed for footer positioning*/
-    height: auto; /* real browsers */
-    min-height: 100%; /* real browsers */
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
@@ -100,7 +97,7 @@ body {
 /* Index Page */
 
 .indexPage {
-    margin-top: 22vh;
+    margin-top: 18vh;
     text-align: center;
     display: grid;
 }
