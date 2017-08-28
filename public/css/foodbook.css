@@ -120,16 +120,8 @@ body {
     padding: 15px;
 }
 
-@media only screen and (max-width: 850px) {
-    .indexPage [class*="col-"]{
-        width: 100%;
-        text-align: center;
-    }
-
-    .indexPage a {
-        overflow: hidden;
-        font-size: 5vh;
-    }
+@media only screen and (mix-width: 850px) {
+    
 }
 
 /* Menù Container */
