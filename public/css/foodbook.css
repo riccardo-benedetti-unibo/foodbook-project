@@ -123,6 +123,7 @@ body {
 @media only screen and (min-width: 600px) {
     .indexPage {
         display: inline-block;
+        margin-top: 20vh;
     }
 
     .indexPage a {
