@@ -92,8 +92,6 @@ body {
     height: auto !important; /* real browsers */
     min-height: 100%; /* real browsers */
     background: transparent;
-    margin-top: 20px;
-    margin-bottom: 20px;
     margin-left: 17%;
     margin-right: 17%;
     display: grid;
