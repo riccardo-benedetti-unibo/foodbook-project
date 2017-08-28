@@ -127,8 +127,6 @@ body {
 
     .indexPage a {
         overflow: hidden;
-        height: 100px;
-        display: inline-table;
         font-size: 5vh;
     }
 }
