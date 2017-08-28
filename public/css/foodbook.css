@@ -125,12 +125,6 @@ body {
     padding: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-    .indexPage a {
-        display: inline-block;
-    }
-}
-
 /* Menù Container */
 
 .menuContainer {
