@@ -219,7 +219,7 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: landscape){
     .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
         position: relative;
         display: block;
