@@ -53,6 +53,10 @@
 
 /* Background settings */
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: beige;
     background-image: url(../img/bg-top.gif), url(../img/bg-frame-left.gif), url(../img/bg-frame-right.gif), url(../img/bg-bottom.gif);
