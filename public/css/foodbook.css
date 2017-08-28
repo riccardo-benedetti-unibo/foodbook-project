@@ -67,6 +67,10 @@
 
 /* Background settings */
 
+html {
+    min-height: -webkit-fill-available;
+}
+
 body {
     background-color: beige;
     background-image: url(../img/bg-top.gif), url(../img/bg-frame-left.gif), url(../img/bg-frame-right.gif), url(../img/bg-bottom.gif);
