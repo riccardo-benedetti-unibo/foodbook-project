@@ -75,7 +75,7 @@ body {
     background-size: 65% auto, 16.66% auto, 16.66% auto, 70% auto;
 }
 
-@media only screen and (min-width: 600px), screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     body {
         background-size: 40% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
@@ -93,7 +93,7 @@ body {
     display: grid;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .container {
         width: 66%;
         min-height: 520px;
@@ -113,10 +113,12 @@ body {
 }
 
 .indexPage a {
-    font-size: 100%;
+    font-size: 200%;
     border-radius: 100%;
-    display: flex;
     padding: 15%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 200px;
 }
 
 .indexPage [class*="col-"]{
