@@ -74,15 +74,19 @@ body {
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    min-height: -webkit-fill-available;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column;
 }
 
+
+
 /* Index Page */
 
 .indexPage {
-    margin-top: 24vh;
     text-align: center;
     display: grid;
 }
@@ -105,7 +109,6 @@ body {
 @media only screen and (orientation: landscape) {
     .indexPage {
         display: inline-block;
-        margin-top: 35vh;
     }
 
     .indexPage a {
