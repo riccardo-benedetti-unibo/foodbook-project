@@ -135,6 +135,7 @@ body {
 
 .menuContainer {
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menuContainer a {
