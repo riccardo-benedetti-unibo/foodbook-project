@@ -93,18 +93,18 @@ body {
     display: grid;
 }
 
+@media only screen and (orientation: landscape) {
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .container {
         width: 66%;
         margin-top: 15%;
         margin-bottom: 15%;
-    }
-}
-
-@media only screen and (orientation: landscape) {
-    .container {
-        margin-top: 0;
-        margin-bottom: 0;
     }
 }
 
