@@ -106,14 +106,14 @@ body {
 }
 
 .indexPage a {
-    font-size: 4vw;
+    font-size: 2em;
     border-radius: 100%;
     padding: 2vw;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    height: 16vh;
-    width: 50vw;
+    min-height: 16vh;
+    min-width: 50vw;
 }
 
 .indexPage [class*="col-"]{
@@ -127,7 +127,7 @@ body {
 
     .indexPage a {
         font-size: 2vw;
-        height: 25vh;
+        min-height: 25vh;
     }
 }
 
