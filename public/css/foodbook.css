@@ -123,6 +123,7 @@ body {
 @media only screen and (max-width: 850px) {
     .indexPage [class*="col-"]{
         width: 100%;
+        text-align: center;
     }
 
     .indexPage a {
