@@ -68,7 +68,7 @@
 /* Background settings */
 
 html {
-    min-height: -webkit-fill-available;
+    height: -webkit-fill-available;
 }
 
 body {
