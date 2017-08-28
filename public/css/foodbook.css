@@ -190,10 +190,6 @@ body {
     top: 0;
 }
 
-.menuContainer [class*="col-"]{
-    border: none;
-}
-
 @media screen and (min-width: 600px){
     .menuContainer .icon {
         display: none;
@@ -207,6 +203,10 @@ body {
         float: left;
         text-align: left;
         top: 48px;
+    }
+
+    .menuContainer [class*="col-"]{
+        border: none;
     }
 }
 
