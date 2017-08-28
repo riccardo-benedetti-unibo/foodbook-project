@@ -194,7 +194,7 @@ body {
     border: none;
 }
 
-@media screen and (orientation: landscape){
+@media screen and (min-width: 600px){
     .menuContainer .icon {
         display: none;
     }
