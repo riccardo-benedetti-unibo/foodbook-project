@@ -108,20 +108,23 @@ body {
 }
 
 .indexPage a {
-    font-size: 200%;
+    font-size: 2vw;
     border-radius: 100%;
     padding: 15%;
     display: table-cell;
     vertical-align: middle;
     height: 200px;
-    width: 400px;
 }
 
 .indexPage [class*="col-"]{
     padding: 15px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 768px) {
+    .indexPage [class*="col-"]{
+        width: 100%;
+    }
+
     .indexPage a {
         overflow: hidden;
     }
