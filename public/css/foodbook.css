@@ -87,8 +87,7 @@ body {
 
 .container {
     position: absolute; /* needed for footer positioning*/
-    height: auto !important; /* real browsers */
-    min-height: 100%; /* real browsers */
+    height: auto; /* real browsers */
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
