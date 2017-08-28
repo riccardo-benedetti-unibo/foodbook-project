@@ -120,8 +120,8 @@ body {
     padding: 15px;
 }
 
-@media only screen and (mix-width: 850px) {
-    
+@media only screen and (min-width: 850px) {
+
 }
 
 /* Menù Container */
