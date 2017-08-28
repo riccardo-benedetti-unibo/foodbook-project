@@ -78,7 +78,6 @@ body {
 
 @media only screen and (orientation: landscape) {
     body {
-        min-height: 125vh;
         background-size: 50% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
 }
@@ -120,7 +119,7 @@ body {
 @media only screen and (orientation: landscape) {
     .indexPage {
         display: inline-block;
-        margin-top: 25vh;
+        margin-top: 35vh;
     }
 
     .indexPage a {
