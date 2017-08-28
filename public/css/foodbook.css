@@ -137,6 +137,8 @@ body {
     overflow: hidden;
     text-overflow:ellipsis;
     -o-text-overflow:ellipsis;
+    position: relative;
+    padding-bottom: 48px;
 }
 
 .menuContainer a {
@@ -144,6 +146,7 @@ body {
     text-align: center;
     padding: 15px;
     display: block;
+    float: left;
 }
 
 .menuContainer a:hover {
@@ -151,7 +154,11 @@ body {
 }
 
 .menuContainer .icon {
-    display: none;
+    display: block;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 48px;
 }
 
 .menuContainer text {
@@ -168,57 +175,36 @@ body {
     padding: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    .menuContainer {
-        position: relative;
-        padding-bottom: 48px;
-    }
-    .menuContainer div:not(:nth-last-child(-n+2)) {
+.menuContainer div:not(:nth-last-child(-n+2)) {
+    display: none;
+}
+
+.menuContainer div:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    text-align: left;
+    top: 48px;
+}
+
+.menuContainer div:nth-last-child(2) {
+    position: absolute;
+    float: right;
+    right: 0px;
+    top: 0;
+}
+
+.menuContainer [class*="col-"]{
+    border: none;
+}
+
+@media screen and (orientation: landscape){
+    .menuContainer .icon {
         display: none;
-    }
-    .menuContainer div:first-child {
-        position: relative;
-        display: block;
-        float: left;
-        text-align: left;
-        top: 48px;
-    }
-    .menuContainer div:nth-last-child(2) {
-        position: absolute;
-        float: right;
-        right: 0px;
-        top: 0;
-    }
-    .menuContainer [class*="col-"]{
-        border: none;
-    }
-    .menuContainer div.icon {
-        display: block;
-        position: absolute;
-        float: right;
-        right: 0;
-        top: 48px;
-    }
-    .menuContainer a {
-        float: left;
-    }
-
-    .menuContainer text {
-        display: block;
-        color: brown;
-        text-align: right;
-        padding-right: 3%;
-        padding-top: 2%;
-    }
-
-    .menuContainer form {
-        float:left;
-        display: inline-block;
-        padding: 20px;
     }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape){
+@media not all and (orientation: landscape){
     .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
         position: relative;
         display: block;
