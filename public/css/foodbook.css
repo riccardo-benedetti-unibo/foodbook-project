@@ -87,7 +87,7 @@ body {
 @media only screen and (orientation: landscape) {
     .container {
         margin-top: 35vh;
-        margin-bottom: 20vh;
+        margin-bottom: 40vh;
     }
 }
 
