@@ -73,7 +73,7 @@ body {
     background-repeat: no-repeat, repeat-y, repeat-y, no-repeat;
     background-position: center top, left top, right top, center bottom;
     background-size: 65% auto, 16.66% auto, 16.66% auto, 70% auto;
-    min-height: -webkit-fill-available+100px;
+    min-height: 900px;
 }
 
 @media only screen and (min-width: 600px) {
