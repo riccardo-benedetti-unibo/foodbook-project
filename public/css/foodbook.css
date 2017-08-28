@@ -194,6 +194,10 @@ body {
     .menuContainer .icon {
         display: none;
     }
+
+    .menuContainer div {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 600px){
