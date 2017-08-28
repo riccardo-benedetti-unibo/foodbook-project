@@ -76,7 +76,7 @@ body {
     min-height: -webkit-fill-available;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (orientation: landscape) {
     body {
         min-height: 125vh;
         background-size: 40% auto, 16.66% auto, 16.66% auto, 70% auto;
@@ -93,7 +93,6 @@ body {
     margin-left: 17%;
     margin-right: 17%;
     display: -webkit-flex;
-    display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
 }
@@ -120,7 +119,7 @@ body {
     padding: 15px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (orientation: landscape) {
     .indexPage {
         display: inline-block;
         margin-top: 25vh;
