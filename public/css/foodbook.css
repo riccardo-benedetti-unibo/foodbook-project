@@ -93,7 +93,7 @@ body {
     display: grid;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) {
     .container {
         width: 66%;
         margin-top: 0;
