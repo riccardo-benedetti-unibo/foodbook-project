@@ -120,6 +120,12 @@ body {
     padding: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+    .indexPage a {
+        font-size: 100%;
+    }
+}
+
 /* Menù Container */
 
 .menuContainer {
