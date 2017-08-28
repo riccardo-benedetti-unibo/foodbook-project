@@ -74,15 +74,12 @@ body {
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
-    min-height: -webkit-fill-available;
+    margin-top: 25vw;
+    margin-bottom: 20vw;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column;
 }
-
-
 
 /* Index Page */
 
