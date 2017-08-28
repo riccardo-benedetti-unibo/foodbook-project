@@ -82,7 +82,7 @@ body {
 /* Index Page */
 
 .indexPage {
-    margin-top: 18vh;
+    margin-top: 24vh;
     text-align: center;
     display: grid;
 }
@@ -90,11 +90,11 @@ body {
 .indexPage a {
     font-size: 4vw;
     border-radius: 100%;
-    padding: 15%;
+    padding: 2vw;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    height: 18vh;
+    height: 16vh;
     width: 50vw;
 }
 
