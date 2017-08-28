@@ -75,7 +75,7 @@ body {
     background-size: 65% auto, 16.66% auto, 16.66% auto, 70% auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     body {
         background-size: 40% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
