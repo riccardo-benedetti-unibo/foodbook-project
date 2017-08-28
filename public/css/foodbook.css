@@ -84,6 +84,12 @@ body {
     flex-direction: column;
 }
 
+@media only screen and (orientation: landscape) {
+    .container {
+        margin-bottom: 16vh;
+    }
+}
+
 /* Index Page */
 
 .indexPage {
