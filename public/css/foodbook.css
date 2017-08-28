@@ -135,17 +135,15 @@ body {
 
 .menuContainer {
     overflow: hidden;
-    text-overflow:ellipsis;
-    -o-text-overflow:ellipsis;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
     position: relative;
     padding-bottom: 48px;
 }
 
 .menuContainer a {
     color: brown;
-    text-align: center;
     padding: 15px;
-    display: block;
     float: left;
 }
 
@@ -154,9 +152,7 @@ body {
 }
 
 .menuContainer .icon {
-    display: block;
     position: absolute;
-    float: right;
     right: 0;
     top: 48px;
 }
@@ -223,7 +219,7 @@ body {
 .search strong {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
-    padding-left: 10%;
+    padding-left: 1vw;
 }
 
 .searchInput{
