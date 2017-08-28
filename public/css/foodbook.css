@@ -92,7 +92,10 @@ body {
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
-    display: grid;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 /* Index Page */
