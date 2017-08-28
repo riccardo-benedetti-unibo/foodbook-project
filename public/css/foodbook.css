@@ -134,8 +134,8 @@ body {
 /* Menù Container */
 
 .menuContainer {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
 }
 
 .menuContainer a {
