@@ -122,7 +122,11 @@ body {
 
 @media only screen and (max-width: 768px) {
     .indexPage a {
-        font-size: 100%;
+        overflow: hidden;
+    }
+
+    .col-4 .col-m-4 {
+        width: 100%;
     }
 }
 
