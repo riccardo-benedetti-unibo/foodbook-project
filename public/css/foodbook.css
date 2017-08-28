@@ -78,6 +78,7 @@ body {
 
 @media only screen and (min-width: 600px) {
     body {
+        min-height: 125vh;
         background-size: 40% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
 }
