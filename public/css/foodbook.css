@@ -96,13 +96,8 @@ body {
 @media only screen and (min-width: 768px) {
     .container {
         width: 66%;
-        min-height: 520px;
-        background: transparent;
-        margin-left: 17%;
-        margin-right: 17%;
         margin-top: 15%;
         margin-bottom: 15%;
-        display: grid;
     }
 }
 
