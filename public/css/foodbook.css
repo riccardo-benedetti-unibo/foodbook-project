@@ -59,7 +59,6 @@ body {
     background-repeat: no-repeat, repeat-y, repeat-y, no-repeat;
     background-position: center top, left top, right top, center bottom;
     background-size: 65% auto, 16.66% auto, 16.66% auto, 70% auto;
-    min-height: 100vw;
 }
 
 @media only screen and (orientation: landscape) {
