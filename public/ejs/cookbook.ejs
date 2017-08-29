@@ -11,65 +11,94 @@
 
 <body onload="javascript:init()">
 <div class="container">
-	<div class="menuContainer">
-		<ul>
-			<li>
+	<div class="row" style="border-bottom: none">
+		<div class="menuContainer" id="menuMobile">
+            <% if(user){ %>
+			<div class="col-2">
 				<a href="/mainpage">RecipeDashboard</a>
-			</li>
-			<li>
+			</div>
+			<div class="col-2">
 				<a href="/cookbook">MyCookbook</a>
-			</li>
-			<li>
+			</div>
+			<div class="col-2">
 				<a href="/analytics">Analytics</a>
-			</li>
-			<li>
+			</div>
+			<div class="col-2">
 				<a href="/logout">Logout</a>
-			</li>
-			<text style="float:right;">
-				<text>Logged as:</text>
-				<text><b><%= user %></b></text>
-			</text>
-		</ul>
+			</div>
+			<div class="col-4" style="float: right; border: none;">
+				<text>
+					Logged as:</br>
+					<b><%= user %></b>
+				</text>
+			</div>
+            <% } else { %>
+			<div class="col-2">
+				<a href="/">SignIn</a>
+			</div>
+			<div class="col-2">
+				<a href="/mainpage">RecipeDashboard</a>
+			</div>
+			<div class="col-2">
+				<a href="/analytics">Analytics</a>
+			</div>
+			<div class="col-6" style="float: right; border: none;">
+				<text>
+					Please, sign in to </br> access your Cookbook
+				</text>
+			</div>
+            <% } %>
+			<div class="icon" style="float: right; border: none;">
+				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
+			</div>
+		</div>
 	</div>
 
-	<div class="recipeContainer">
-		<h1><i><%= user%>'s Personal Cookbook</i></h1>
-		<ul>
-            <% recipes.forEach(function(r,i) {%>
-			<li>
-				<form name="form<%= i %>" action="/recipe" method="post">
-					<a href="#" class="recipeLink" onclick="document.forms['form<%= i %>'].submit(); return false;">
-                        <% r.ingredients.forEach(function(ingr,j) {%>
-						<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
-                        <% }); %>
-						<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
-						<figure>
-							<img src='<%= r.image %>' alt="">
-							<figcaption>
-                                <%= r.title %>
-							</figcaption>
-						</figure>
-					</a>
-				</form>
-			</li>
-            <% }) %>
-		</ul>
+	<div class="row" style="border-bottom: none">
+		<div class="recipeContainer">
+			<h1><i>Recipe Dashboard</i></h1>
+			<ul>
+                <% recipes.forEach(function(r,i) {%>
+				<li>
+					<form name="form<%= i %>" action="/recipe" method="post">
+						<a href="#" class="recipeLink" onclick="document.forms['form<%= i %>'].submit(); return false;">
+                            <% r.ingredients.forEach(function(ingr,j) {%>
+							<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
+                            <% }); %>
+							<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
+							<picture>
+								<img src='<%= r.image %>' alt="">
+								<figcaption>
+                                    <%= r.title %>
+								</figcaption>
+							</picture>
+						</a>
+					</form>
+				</li>
+                <% }) %>
+			</ul>
+		</div>
+	</div>
 
+	<div class="row" style="display: flex">
 		<div class="recipeNavPage" id="recipeNavPage">
-			<form name="formPrev" action="/cookbook" method="get">
+			<form name="formPrev" style="width: 80px" action="/mainpage" method="get">
 				<a href="#" id="aPrev" onclick="document.forms['formPrev'].submit(); return false;">&laquo; Prev</a>
 				<input type="hidden" name="page" value="<%= currentpage-1 %>"/>
+				<input type="hidden" name="keywords" value="<%= keywords %>"/>
 			</form>
             <% var pages = (npages < 10) ? npages : 9 %>
             <% for(var i=0; i<pages; i++){ %>
-			<form name="formPag<%= i %>" action="/cookbook" method="get">
+			<form name="formPag<%= i %>" action="/mainpage" method="get">
 				<a href="#" id="aPag<%= i %>" onclick="document.forms['formPag<%= i %>'].submit(); return false;"></a>
 				<input id="iPag<%= i %>" type="hidden" name="page"/>
+				<input type="hidden" name="keywords" value="<%= keywords %>"/>
 			</form>
             <% } %>
-			<form name="formNext" action="/cookbook" method="get">
+			<form name="formNext" style="width: 80px" action="/mainpage" method="get">
 				<a href="#" id="aNext" onclick="document.forms['formNext'].submit(); return false;">Next &raquo;</a>
 				<input type="hidden" name="page" value="<%= currentpage+1 %>"/>
+				<input type="hidden" name="keywords" value="<%= keywords %>"/>
 			</form>
 		</div>
 	</div>
@@ -107,6 +136,17 @@
             if(i == currentPage){
                 document.getElementById('aPag'+(i-fromPage)).className = 'active';
             }
+        }
+    }
+</script>
+
+<script>
+    function responsiveHandler() {
+        var x = document.getElementById("menuMobile");
+        if (x.className === "menuContainer") {
+            x.className += " responsive";
+        } else {
+            x.className = "menuContainer";
         }
     }
 </script>
