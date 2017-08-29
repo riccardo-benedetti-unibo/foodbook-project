@@ -191,6 +191,10 @@ body {
 }
 
 @media screen and (min-width: 600px){
+    .menuContainer {
+        padding-bottom: 0px;
+    }
+
     .menuContainer .icon {
         display: none;
     }
