@@ -190,7 +190,7 @@ body {
     top: 0;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
     .menuContainer {
         padding-bottom: 0px;
     }
@@ -206,7 +206,7 @@ body {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     .menuContainer.responsive div:not(:nth-last-child(-n+2)) {
         position: relative;
         display: block;
