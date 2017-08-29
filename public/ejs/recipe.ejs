@@ -197,4 +197,16 @@
 		<% }); %>
 	}
 </script>
+
+<script>
+    function responsiveHandler() {
+        var x = document.getElementById("menuMobile");
+        if (x.className === "menuContainer") {
+            x.className += " responsive";
+        } else {
+            x.className = "menuContainer";
+        }
+    }
+</script>
+
 </html>
