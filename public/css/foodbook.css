@@ -94,6 +94,7 @@ body {
 @media only screen and (min-width: 768px) {
     .container {
         min-height: 50vh;
+        margin-top: 20vw;
     }
 }
 
