@@ -561,7 +561,7 @@ select.form-control {
         cursor: pointer;
         color: #fff;
         border-radius: 50%;
-        width: 13vw;
+        max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
     }
