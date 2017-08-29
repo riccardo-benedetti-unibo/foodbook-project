@@ -65,14 +65,16 @@
 				</div>
 			</div>
 			<div class="col-3">
-                <% if(user){ %>
-				<form method="post" id="likeform">
-					<div class="fdbButton" id="divLike" style="background-color: gold">
-						<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
-						<a href="#" id="btnLike" onclick="javascript:toggle();"> Null Text </a>
-					</div>
-				</form>
-                <% } %>
+				<div class="rlike">
+					<% if(user){ %>
+					<form method="post" id="likeform">
+						<div class="fdbButton" id="divLike" style="background-color: gold">
+							<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
+							<a href="#" id="btnLike" onclick="javascript:toggle();"> Null Text </a>
+						</div>
+					</form>
+					<% } %>
+				</div>
 			</div>
 		</div>
 
