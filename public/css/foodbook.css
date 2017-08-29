@@ -519,10 +519,8 @@ select.form-control {
 
 /* Recipe Detail Page Elements */
 
-.rcontainer {
-    overflow: hidden;
-    border-style: ridge;
-    border-color: rosybrown;
+.rcontainer [class*="col-"] {
+    border: none;
 }
 
 .rheader {
