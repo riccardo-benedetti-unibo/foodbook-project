@@ -526,11 +526,7 @@ select.form-control {
 .rheader {
     display: -webkit-box;
     padding: 4%;
-}
-
-.rheaderinfo {
     text-align: center;
-    width: 78%;
 }
 
 .rheaderlike a {
@@ -650,7 +646,7 @@ ul {
 }
 
 p {
-    color: brown
+    color: brown;
 }
 
 strong {

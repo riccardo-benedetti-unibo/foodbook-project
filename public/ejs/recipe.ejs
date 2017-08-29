@@ -12,7 +12,7 @@
 	
 <body onload="javascript:init()">
 <div class="container">
-	<div class="row" style="border-bottom: none">
+	<div class="row">
 		<div class="menuContainer" id="menuMobile">
             <% if(user){ %>
 			<div class="col-2">
@@ -58,9 +58,11 @@
 	<div class="rcontainer">
 		<div class="row" style="border-bottom: none; border-top: none">
 			<div class="col-9">
-				<h1><i><%= recipe.title %></i></h1>
-				<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
-				<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
+				<div class="rheader">
+					<h1><i><%= recipe.title %></i></h1>
+					<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
+					<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
+				</div>
 			</div>
 			<div class="col-3">
                 <% if(user){ %>
