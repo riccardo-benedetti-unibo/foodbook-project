@@ -138,7 +138,7 @@ body {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     position: relative;
-    padding-bottom: 8vw;
+    padding-bottom: 50px;
 }
 
 .menuContainer a {
@@ -154,7 +154,7 @@ body {
 .menuContainer .icon {
     position: absolute;
     right: 0;
-    top: 8vw;
+    top: 50px;
 }
 
 .menuContainer text {
@@ -180,7 +180,7 @@ body {
     display: block;
     float: left;
     text-align: left;
-    top: 8vw;
+    top: 50px;
 }
 
 .menuContainer div:nth-last-child(2) {
@@ -218,7 +218,7 @@ body {
         display: block;
         float: left;
         text-align: left;
-        top: 8vw;
+        top: 50px;
     }
 
     .menuContainer [class*="col-"]{
