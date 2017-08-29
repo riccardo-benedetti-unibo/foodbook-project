@@ -154,7 +154,7 @@ body {
 .menuContainer .icon {
     position: absolute;
     right: 0;
-    top: 48px;
+    top: 8vw;
 }
 
 .menuContainer text {
@@ -180,7 +180,7 @@ body {
     display: block;
     float: left;
     text-align: left;
-    top: 48px;
+    top: 8vw;
 }
 
 .menuContainer div:nth-last-child(2) {
