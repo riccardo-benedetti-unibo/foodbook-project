@@ -236,6 +236,8 @@ body {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
     padding-left: 1vw;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .searchInput{
