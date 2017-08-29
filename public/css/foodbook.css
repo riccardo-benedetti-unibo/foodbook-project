@@ -84,8 +84,8 @@ body {
     background: transparent;
     margin-left: 17%;
     margin-right: 17%;
-    margin-top: 320px;
-    margin-bottom: 300px;
+    margin-top: 25vw;
+    margin-bottom: 16vw;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column;
