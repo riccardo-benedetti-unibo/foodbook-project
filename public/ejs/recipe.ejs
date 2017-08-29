@@ -12,34 +12,47 @@
 	
 <body onload="javascript:init()">
 <div class="container">
-	<div class="menuContainer">
-		<ul>
-			<li>
+	<div class="row" style="border-bottom: none">
+		<div class="menuContainer" id="menuMobile">
+            <% if(user){ %>
+			<div class="col-2">
 				<a href="/mainpage">RecipeDashboard</a>
-			</li>
-            <% if(user){ %>
-			<li>
+			</div>
+			<div class="col-2">
 				<a href="/cookbook">MyCookbook</a>
-			</li>
-            <% } %>
-			<li>
+			</div>
+			<div class="col-2">
 				<a href="/analytics">Analytics</a>
-			</li>
-			<li>
-                <% if(user){ %>
+			</div>
+			<div class="col-2">
 				<a href="/logout">Logout</a>
-                <% } else { %>
+			</div>
+			<div class="col-4" style="float: right; border: none;">
+				<text>
+					Logged as:</br>
+					<b><%= user %></b>
+				</text>
+			</div>
+            <% } else { %>
+			<div class="col-2">
 				<a href="/">SignIn</a>
-                <% } %>
-
-			</li>
-            <% if(user){ %>
-			<text style="float:right;">
-				<text>Logged as:</text>
-				<text><b><%= user %></b></text>
-			</text>
+			</div>
+			<div class="col-2">
+				<a href="/mainpage">RecipeDashboard</a>
+			</div>
+			<div class="col-2">
+				<a href="/analytics">Analytics</a>
+			</div>
+			<div class="col-6" style="float: right; border: none;">
+				<text>
+					Please, sign in to </br> access your Cookbook
+				</text>
+			</div>
             <% } %>
-		</ul>
+			<div class="icon" style="float: right; border: none;">
+				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
+			</div>
+		</div>
 	</div>
 
 	<div class="rcontainer">
