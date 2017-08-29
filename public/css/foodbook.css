@@ -196,6 +196,11 @@ body {
         padding-bottom: 0px;
     }
 
+    .menuContainer a {
+        display: inline-block;
+        width: 100%;
+    }
+
     .menuContainer .icon {
         display: none;
     }
