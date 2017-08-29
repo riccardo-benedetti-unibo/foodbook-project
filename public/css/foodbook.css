@@ -555,13 +555,13 @@ select.form-control {
         align-items: center;
     }
 
+    .rheaderlike form {
+        overflow: hidden;
+    }
+
     .rheaderlikebtn {
         padding: 15%;
         max-width: 100%;
-    }
-
-    .rheaderlikebtn form {
-        overflow: hidden;
     }
 }
 
