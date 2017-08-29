@@ -189,11 +189,6 @@ body {
         padding-bottom: 0px;
     }
 
-    .menuContainer a {
-        width: 100%;
-        text-align: center;
-    }
-
     .menuContainer .icon {
         display: none;
     }
@@ -690,5 +685,10 @@ h1 {
 @media screen and (min-width: 768px) {
     .h1 {
         font-size: 45px;
+    }
+
+    .a {
+        width: 100%;
+        text-align: center;
     }
 }
