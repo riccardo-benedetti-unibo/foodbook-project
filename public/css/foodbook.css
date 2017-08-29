@@ -165,12 +165,6 @@ body {
     padding-top: 1%;
 }
 
-.menuContainer form {
-    float:left;
-    display: inline-block;
-    padding: 20px;
-}
-
 .menuContainer div:not(:nth-last-child(-n+2)) {
     display: none;
 }
@@ -232,6 +226,12 @@ body {
     display: -webkit-flex;
 }
 
+.searchContainer form {
+    float:left;
+    display: inline-block;
+    padding: 20px;
+}
+
 .searchContainer strong {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
@@ -264,6 +264,7 @@ body {
     width: 33%;
     padding: 5px 0px;
 }
+
 .searchButton:hover {
     text-decoration: none;
     background: -webkit-gradient(linear, left top, left bottom, from(beige), to(brown));
