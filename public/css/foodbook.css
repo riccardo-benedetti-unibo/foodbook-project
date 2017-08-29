@@ -526,6 +526,17 @@ select.form-control {
     text-align: -webkit-center;
 }
 
+.rheaderlikebtn {
+    padding: 5%;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .rheaderlikebtn a {
     padding: 5%;
     font-size: 1.2em;
@@ -549,7 +560,7 @@ select.form-control {
         align-items: center;
     }
 
-    .rheaderlikebtn a {
+    .rheaderlikebtn {
         padding: 15%;
         max-width: 100%;
     }
