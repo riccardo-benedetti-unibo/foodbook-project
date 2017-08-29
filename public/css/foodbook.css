@@ -552,7 +552,6 @@ select.form-control {
 
     .rheaderlike {
         display: flex;
-        float: right;
         align-items: center;
     }
 
