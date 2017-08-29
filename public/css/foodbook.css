@@ -674,6 +674,8 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
 h1 {
@@ -685,10 +687,5 @@ h1 {
 @media screen and (min-width: 768px) {
     .h1 {
         font-size: 45px;
-    }
-
-    .a {
-        width: 100%;
-        text-align: center;
     }
 }
