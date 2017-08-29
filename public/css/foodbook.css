@@ -532,6 +532,17 @@ select.form-control {
 
 }
 
+.rheaderlikebtn {
+    padding: 15%;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    width: 13vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @media only screen and (min-width: 768px) {
     .rheader {
         padding: 1vw;
@@ -542,6 +553,17 @@ select.form-control {
     .rheaderlike {
         display: flex;
         align-items: center;
+    }
+
+    .rheaderlikebtn {
+        padding: 15%;
+        font-size: 1.2em;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 50%;
+        width: 13vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
