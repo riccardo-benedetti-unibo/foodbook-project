@@ -524,13 +524,13 @@ select.form-control {
 }
 
 .rheader {
-    display: -webkit-box;
     padding: 4%;
     text-align: center;
 }
 
-.rheaderlike a {
-    color: brown;
+.rlike {
+    padding: 4%;
+    text-align: center;
 }
 
 .rdmenu ul {
