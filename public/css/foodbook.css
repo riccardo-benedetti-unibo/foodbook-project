@@ -526,15 +526,23 @@ select.form-control {
 .rheader {
     padding: 1vw;
     text-align: center;
-    display: flex;
 }
 
 .rheaderinfo {
 
 }
 
-.rheaderlike {
+@media only screen and (min-width: 768px) {
+    .rheader {
+        padding: 1vw;
+        text-align: center;
+        display: flex;
+    }
 
+    .rheaderlike {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .rdmenu ul {
