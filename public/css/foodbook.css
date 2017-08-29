@@ -57,7 +57,7 @@ html {
     min-height: 100%;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 768px) {
     html {
         min-height: 110vh;
     }
@@ -71,7 +71,7 @@ body {
     background-size: 65% auto, 16.66% auto, 16.66% auto, 70% auto;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 768px) {
     body {
         background-size: 50% auto, 16.66% auto, 16.66% auto, 70% auto;
     }
@@ -90,7 +90,7 @@ body {
     flex-direction: column;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 768px) {
     .container {
         margin-top: 35vh;
         margin-bottom: 0vh;
