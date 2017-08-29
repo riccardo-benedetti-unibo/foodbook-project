@@ -272,13 +272,13 @@ body {
     border: 0;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 768px) {
     .searchInput {
-        width: 67%;
+        width: 40%;
     }
 
     .searchButton {
-        width: 33%;
+        width: 20%;
         padding: 5px 15px;
     }
 }
