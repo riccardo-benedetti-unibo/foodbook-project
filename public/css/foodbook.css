@@ -352,7 +352,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .recipeContainer h1 {
-        font-size: initial;
+        font-size: 45px;
     }
 }
 
