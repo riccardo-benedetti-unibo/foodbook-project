@@ -197,10 +197,8 @@ body {
 
     .menuContainer div:not(:nth-last-child(-n+2)){
         display: inline-block;
-    }
-
-    .menuContainer div:not(:first-child){
         top: 0px;
+        float: left;
     }
 }
 
