@@ -228,11 +228,11 @@ body {
 
 /* "Search by Ingredient" components */
 
-.search {
+.searchContainer {
     padding: 8px;
 }
 
-.search strong {
+.searchContainer strong {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
     padding-left: 1vw;
