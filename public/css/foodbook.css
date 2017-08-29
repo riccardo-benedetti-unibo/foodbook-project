@@ -229,7 +229,7 @@ body {
 .searchContainer form {
     float:left;
     display: inline-block;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .searchContainer strong {
@@ -276,6 +276,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .searchContainer form {
+        
+    }
+
     .searchInput {
         width: 40%;
     }
