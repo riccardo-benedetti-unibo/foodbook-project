@@ -55,7 +55,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row" style="border-bottom: none; border-top: none">
 		<div class="col-9">
 			<h1><i><%= recipe.title %></i></h1>
 			<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row" style="border-bottom: none; border-top: none">
 		<div class="col-6">
 			<figure>
 				<img src='<%= recipe.image %>' alt="">
@@ -93,7 +93,7 @@
 	</div>
 
 	<% if(user){ %>
-	<div class="row">
+	<div class="row" style="border-top: none">
 		<div class="col-12">
 			<form action="/raterecipe" method="post" id="ratingform">
 				<strong>Rate this recipe: </strong>
