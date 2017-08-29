@@ -526,12 +526,7 @@ select.form-control {
     text-align: -webkit-center;
 }
 
-.rheaderlike a {
-    width: 100%;
-    height: 100%;
-}
-
-.rheaderlikebtn {
+.rheaderlikebtn a {
     padding: 5%;
     font-size: 1.2em;
     cursor: pointer;
@@ -554,7 +549,7 @@ select.form-control {
         align-items: center;
     }
 
-    .rheaderlikebtn {
+    .rheaderlikebtn a {
         padding: 15%;
         max-width: 100%;
     }
