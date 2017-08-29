@@ -120,7 +120,7 @@ body {
     padding: 15px;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width: 600px) {
     .indexPage {
         display: inline-block;
     }
