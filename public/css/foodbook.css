@@ -196,7 +196,6 @@ body {
     }
 
     .menuContainer a {
-        display: inline-block;
         width: 100%;
         text-align: center;
     }
@@ -230,6 +229,7 @@ body {
 
 .searchContainer {
     padding: 8px;
+    display: -webkit-flex;
 }
 
 .searchContainer strong {
