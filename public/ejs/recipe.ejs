@@ -55,69 +55,63 @@
 		</div>
 	</div>
 
-	<div class="rcontainer">
-		<ul>
-			<li>
-				<div class="rheader">
-					<div class="rheaderinfo">
-						<h1><i><%= recipe.title %></i></h1>
-						<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
-						<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
-					</div>
-					<div class="rheaderlike">
-                        <% if(user){ %>
-						<form method="post" id="likeform">
-							<div class="fdbButton" id="divLike" style="background-color: gold">
-								<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
-								<a href="#" id="btnLike" onclick="javascript:toggle();"> Null Text </a>
-							</div>
-						</form>
-                        <% } %>
-					</div>
+	<div class="row">
+		<div class="col-9">
+			<h1><i><%= recipe.title %></i></h1>
+			<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
+			<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
+		</div>
+		<div class="col-3">
+			<% if(user){ %>
+			<form method="post" id="likeform">
+				<div class="fdbButton" id="divLike" style="background-color: gold">
+					<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
+					<a href="#" id="btnLike" onclick="javascript:toggle();"> Null Text </a>
 				</div>
-			</li>
-			<li>
-				<div class="rbody">
-					<div class="rimage">
-						<figure>
-							<img src='<%= recipe.image %>' alt="">
-						</figure><br>
-					</div>
-					<div class="rdetails">
-						<div class="rdmenu">
-							<ul>
-								<li id="ingredients"><a href="#" onclick="javascript:displayIngredients();">Ingredients</a></li>
-								<li id="instructions"><a href="#" onclick="javascript:displayInstructions();">Instructions</a></li>
-							</ul>
-						</div>
-						<div class="rdcontent">
-							<p><ul id="rdinfo"></ul></p>
-						</div>
-					</div>
-				</div>
-			</li>
-            <% if(user){ %>
-			<li>
-				<div class="rdstars">
-					<strong>Rate this recipe: </strong>
-					<form action="/raterecipe" method="post" id="ratingform">
-						<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
-						<input class="star star-5" id="star-5" type="radio" name="star" value="5" onclick="this.form.submit();"/>
-						<label class="star star-5" for="star-5"></label>
-						<input class="star star-4" id="star-4" type="radio" name="star" value="4" onclick="this.form.submit();"/>
-						<label class="star star-4" for="star-4"></label>
-						<input class="star star-3" id="star-3" type="radio" name="star" value="3" onclick="this.form.submit();"/>
-						<label class="star star-3" for="star-3"></label>
-						<input class="star star-2" id="star-2" type="radio" name="star" value="2" onclick="this.form.submit();"/>
-						<label class="star star-2" for="star-2"></label>
-						<input class="star star-1" id="star-1" type="radio" name="star" value="1" onclick="this.form.submit();"/>
-						<label class="star star-1" for="star-1"></label>
-					</form>
-				</div>
-			</li>
-            <% } %>
-		</ul>
+			</form>
+			<% } %>
+		</div>
 	</div>
+
+	<div class="row">
+		<div class="col-6">
+			<figure>
+				<img src='<%= recipe.image %>' alt="">
+			</figure><br>
+		</div>
+		<div class="col-6">
+			<div class="rdmenu">
+				<ul>
+					<li id="ingredients"><a href="#" onclick="javascript:displayIngredients();">Ingredients</a></li>
+					<li id="instructions"><a href="#" onclick="javascript:displayInstructions();">Instructions</a></li>
+				</ul>
+			</div>
+			<div class="rdcontent">
+				<p><ul id="rdinfo"></ul></p>
+			</div>
+		</div>
+	</div>
+
+	<% if(user){ %>
+	<div class="row">
+		<div class="col-12">
+			<form action="/raterecipe" method="post" id="ratingform">
+				<strong>Rate this recipe: </strong>
+				<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
+				<input class="star star-5" id="star-5" type="radio" name="star" value="5" onclick="this.form.submit();"/>
+				<label class="star star-5" for="star-5"></label>
+				<input class="star star-4" id="star-4" type="radio" name="star" value="4" onclick="this.form.submit();"/>
+				<label class="star star-4" for="star-4"></label>
+				<input class="star star-3" id="star-3" type="radio" name="star" value="3" onclick="this.form.submit();"/>
+				<label class="star star-3" for="star-3"></label>
+				<input class="star star-2" id="star-2" type="radio" name="star" value="2" onclick="this.form.submit();"/>
+				<label class="star star-2" for="star-2"></label>
+				<input class="star star-1" id="star-1" type="radio" name="star" value="1" onclick="this.form.submit();"/>
+				<label class="star star-1" for="star-1"></label>
+			</form>
+		</div>
+	</div>
+	<% } %>
 </div>
 </body>
 
