@@ -304,6 +304,10 @@ body {
     display: grid;
 }
 
+.recipeContainer h1 {
+    font-size: 30px;
+}
+
 .recipeContainer ul {
     padding: 5px;
 }
@@ -346,9 +350,9 @@ body {
     transition: transform .2s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
     .recipeContainer h1 {
-        font-size: 30px;
+        font-size: initial;
     }
 }
 
@@ -356,7 +360,7 @@ body {
 
 .recipeNavPage {
     display: flex;
-    padding: 4%;
+    padding: 8%;
     margin: 0 auto;
 }
 
@@ -384,9 +388,9 @@ body {
     background-color: rosybrown;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) {
     .recipeNavPage {
-        padding: 8%;
+        padding: 4%;
     }
 }
 
