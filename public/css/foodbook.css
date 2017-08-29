@@ -532,13 +532,17 @@ select.form-control {
 
 }
 
+.rheaderlike {
+    text-align: -webkit-center;
+}
+
 .rheaderlikebtn {
-    padding: 15%;
+    padding: 5%;
     font-size: 1.2em;
     cursor: pointer;
     color: #fff;
     border-radius: 50%;
-    width: 13vw;
+    width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -557,13 +561,7 @@ select.form-control {
 
     .rheaderlikebtn {
         padding: 15%;
-        font-size: 1.2em;
-        cursor: pointer;
-        color: #fff;
-        border-radius: 50%;
         max-width: 100%;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
 
