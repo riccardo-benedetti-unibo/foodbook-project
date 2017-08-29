@@ -283,6 +283,7 @@ body {
     .searchContainer strong {
         float: left;
         width: initial;
+        padding-right: 1vw;
     }
 
     .searchInput {
