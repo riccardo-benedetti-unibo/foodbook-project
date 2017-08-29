@@ -540,6 +540,7 @@ select.form-control {
 .rheaderlikebtn a {
     padding: 5%;
     font-size: 1.2em;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -557,6 +558,10 @@ select.form-control {
     .rheaderlikebtn {
         padding: 15%;
         max-width: 100%;
+    }
+
+    .rheaderlikebtn form {
+        overflow: hidden;
     }
 }
 
