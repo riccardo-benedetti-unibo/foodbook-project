@@ -304,10 +304,6 @@ body {
     display: grid;
 }
 
-.recipeContainer h1 {
-    font-size: 30px;
-}
-
 .recipeContainer ul {
     padding: 5px;
 }
@@ -348,12 +344,6 @@ body {
     max-width: 90%;
     max-height: 200px;
     transition: transform .2s ease-in-out;
-}
-
-@media screen and (min-width: 768px) {
-    .recipeContainer h1 {
-        font-size: 45px;
-    }
 }
 
 /* Recipe Navigation Bar */
@@ -692,7 +682,13 @@ a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     color: rosybrown;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .h1 {
+        font-size: 45px;
+    }
 }
