@@ -58,24 +58,20 @@
 	<div class="rcontainer">
 		<div class="row" style="border-bottom: none; border-top: none">
 			<div class="rheader">
-				<div class="rheaderinfo">
-					<div class="col-9">
-						<h1><i><%= recipe.title %></i></h1>
-						<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
-						<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
-					</div>
+				<div class="col-9 rheaderinfo">
+					<h1><i><%= recipe.title %></i></h1>
+					<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
+					<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
 				</div>
-				<div class="rheaderlike">
-				<div class="col-3">
-                        <% if(user){ %>
-						<form method="post" id="likeform">
-							<div class="fdbButton" id="divLike" style="background-color: gold">
-								<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
-								<a href="#" id="btnLike" onclick="javascript:toggle();"> Null Text </a>
-							</div>
-						</form>
-                        <% } %>
-					</div>
+				<div class="col-3 rheaderlike">
+					<% if(user){ %>
+					<form method="post" id="likeform">
+						<div class="fdbButton" id="divLike" style="background-color: gold">
+							<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
+							<a href="#" id="btnLike" onclick="javascript:toggle();"> Null Text </a>
+						</div>
+					</form>
+					<% } %>
 				</div>
 			</div>
 		</div>
