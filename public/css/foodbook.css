@@ -189,6 +189,11 @@ body {
         padding-bottom: 0px;
     }
 
+    .menuContainer a {
+        width: 100%;
+        text-align: center;
+    }
+
     .menuContainer .icon {
         display: none;
     }
@@ -674,8 +679,6 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    width: 100%;
-    text-align: center;
 }
 
 h1 {
