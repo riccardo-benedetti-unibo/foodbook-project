@@ -123,11 +123,11 @@
 	function toggle() {
 		var textElem = document.getElementById("btnLike");
 		var btnElem = document.getElementById("divLike");
-		if (textElem.text=="REMOVE FROM MY COOKBOOK"){
-            textElem.text = "ADD TO MY COOKBOOK";
-            btnElem.style.backgroundColor = "#e6e6d0";
+		if (textElem.text=="REMOVE FROM COOKBOOK"){
+            textElem.text = "ADD TO COOKBOOK";
+            btnElem.style.backgroundColor = "#e6b71d";
 		} else {
-            textElem.text = "REMOVE FROM MY COOKBOOK";
+            textElem.text = "REMOVE FROM COOKBOOK";
             btnElem.style.backgroundColor = "#bdbdae";
 		}
     }
@@ -141,11 +141,11 @@
             var textElem = document.getElementById("btnLike");
             var btnElem = document.getElementById("divLike");
             if(window.state == 'true'){
-                textElem.text = "REMOVE FROM MY COOKBOOK";
+                textElem.text = "REMOVE FROM COOKBOOK";
                 btnElem.style.backgroundColor = "#bdbdae";
             }else{
-                textElem.text = "ADD TO MY COOKBOOK";
-                btnElem.style.backgroundColor = "#e6e6d0";
+                textElem.text = "ADD TO COOKBOOK";
+                btnElem.style.backgroundColor = "#e6b71d";
             }
             if('<%= userRate %>'){
                 var $rstars = $('input:radio[name=star]');
