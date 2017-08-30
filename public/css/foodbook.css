@@ -579,22 +579,6 @@ select.form-control {
 
 }
 
-.rbodymenu ul {
-    padding: 10px 10px 0;
-    display: -webkit-box;
-    border-bottom-style: double;
-    border-bottom-color: brown;
-}
-
-.rbodymenu li {
-    padding: 0 0 0 9px;
-    border-bottom: 1px solid brown;
-}
-
-.rbodymenu a:hover {
-    color: #52524d;
-}
-
 .rbodyimage figure {
     margin: 15px;
 }
@@ -614,6 +598,22 @@ select.form-control {
     padding: 5px 15px 4px 6px;
     font-weight: bold;
     color: brown;
+}
+
+.rbodymenu ul {
+    padding: 10px 10px 0;
+    display: -webkit-box;
+    border-bottom-style: double;
+    border-bottom-color: brown;
+}
+
+.rbodymenu li {
+    padding: 0 0 0 9px;
+    border-bottom: 1px solid brown;
+}
+
+.rbodymenu a:hover {
+    color: #52524d;
 }
 
 .rbodycontent ul {
