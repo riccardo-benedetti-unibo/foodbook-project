@@ -602,14 +602,9 @@ select.form-control {
 }
 
 .rbodymenu ul {
-    padding: 10px 10px 0;
     display: -webkit-box;
     border-bottom-style: double;
     border-bottom-color: brown;
-}
-
-.rbodymenu li {
-    padding: 0 0 0 9px;
 }
 
 .rbodycontent ul {
