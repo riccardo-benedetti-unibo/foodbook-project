@@ -607,6 +607,10 @@ select.form-control {
     border-bottom-color: brown;
 }
 
+.rbodycontent {
+    margin-top: 15px;
+}
+
 .rbodycontent ul {
     padding: 10px;
     text-align: left;
