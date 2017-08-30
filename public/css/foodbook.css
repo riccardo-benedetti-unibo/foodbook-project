@@ -598,11 +598,11 @@ select.form-control {
     float: left;
     padding: 5px 15px 4px 6px;
     font-weight: bold;
-    color: brown;
+    color: rosybrown;
 }
 
 .rbodydetails a:active {
-    color: rosybrown;
+    color: brown;
 }
 
 .rbodymenu ul {
