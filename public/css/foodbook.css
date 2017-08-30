@@ -630,17 +630,18 @@ select.form-control {
     }
 }
 
-.rrating text {
-    display: inline-block;
-    color: black;
-    text-align: left;
-    padding: 10px;
-    text-decoration: none;
+.rdstars {
+    display: flex;
+    justify-content: center;
 }
 
-.rdstars {
-    width: 270px;
-    display: inline-block;
+.rdstars strong {
+    padding: 15px;
+}
+
+.rdstars form {
+    display: flex;
+    align-items: center;
 }
 
 .rdstars input.star { display: none; }
