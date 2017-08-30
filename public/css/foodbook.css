@@ -540,7 +540,7 @@ select.form-control {
     font-size: 120%;
     overflow: hidden;
     display: block;
-    padding: 15%;
+    padding: 5%;
     text-overflow: ellipsis;
     max-height: 8vw;
 }
@@ -571,6 +571,7 @@ select.form-control {
 
     .rheaderlikebtn a {
         font-size: 1vw;
+        padding: 15%;
     }
 }
 
