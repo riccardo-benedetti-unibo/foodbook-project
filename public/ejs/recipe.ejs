@@ -99,7 +99,7 @@
 
         <% if(user){ %>
 		<div class="row" style="border-top: none">
-			<div class="col-12">
+			<div class="col-12 rdstars">
 				<form action="/raterecipe" method="post" id="ratingform">
 					<strong>Rate this recipe: </strong>
 					<input type="hidden" name="recipeid" value="<%= recipe._id %>" />
