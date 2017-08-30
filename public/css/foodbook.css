@@ -595,8 +595,8 @@ select.form-control {
     color: #52524d;
 }
 
-.rbodyimage {
-
+.rbodyimage figure {
+    margin: 15px;
 }
 
 .rbodyimage img {
