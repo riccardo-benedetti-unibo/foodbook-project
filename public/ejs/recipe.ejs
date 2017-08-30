@@ -183,6 +183,9 @@
 
 <script type="text/javascript">
 	function displayInstructions() {
+	    document.getElementById("btnInstructions").innerHTML.fontcolor("brown");
+        document.getElementById("btnIngredients").innerHTML.fontcolor("rosybrown");
+
 		var p = document.getElementById('rdinfo');
 		p.innerHTML = "";
 		p.innerHTML = '<b>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins</b><br>';
