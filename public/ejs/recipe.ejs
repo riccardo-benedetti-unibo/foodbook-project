@@ -183,8 +183,8 @@
 
 <script type="text/javascript">
 	function displayInstructions() {
-	    document.getElementById("btnInstructions").innerHTML.fontcolor("brown");
-        document.getElementById("btnIngredients").innerHTML.fontcolor("rosybrown");
+	    document.getElementById("btnInstructions").style.color = "brown";
+        document.getElementById("btnIngredients").style.color = "rosybrown";
 
 		var p = document.getElementById('rdinfo');
 		p.innerHTML = "";
@@ -195,6 +195,9 @@
 
 <script type="text/javascript">
 	function displayIngredients() {
+        document.getElementById("btnInstructions").style.color = "rosybrown";
+        document.getElementById("btnIngredients").style.color = "brown";
+
 		var p = document.getElementById('rdinfo');
         p.innerHTML = "";
 		<% recipe.ingredients.forEach(function(ing,i) {%>
