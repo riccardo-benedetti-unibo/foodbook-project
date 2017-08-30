@@ -386,41 +386,19 @@ body {
 
 /* Form Container and Components (Sign in & Register pages) */
 
-.formContainer ul {
-    display: grid;
-}
-
-.formContainer li {
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-    margin: 15px;
-    text-align: center;
-}
-
 .formContainer strong {
     padding: 20px;
 }
 
-.fdbLabel {
-    width: 240px;
-    height: 30px;
-    padding: 0px;
-    margin-right: 50px;
-    text-align: left;
-    display: inline-block;
+.formLabel {
+
 }
 
-.fdbTextbox {
-    width: 280px;
-    height: 22px;
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
-    display: inline-block;
+.formTextbox {
+
 }
 
-.fdbButton {
+.formButton {
     display: inline-block;
     padding: 15px 15px;
     font-size: 22px;
