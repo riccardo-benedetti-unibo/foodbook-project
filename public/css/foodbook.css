@@ -545,36 +545,6 @@ select.form-control {
     max-height: 15vw;
 }
 
-@media only screen and (min-width: 768px) {
-    .rheader {
-        padding: 1vw;
-        text-align: center;
-        display: flex;
-    }
-
-    .rheaderlike {
-        display: flex;
-        align-items: center;
-    }
-
-    .rheaderlike form {
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .rheaderlikebtn {
-        display: flex;
-    }
-
-    .rheaderlikebtn a {
-        font-size: 1vw;
-        padding: 15%;
-    }
-}
-
 .rbody {
 
 }
@@ -624,6 +594,40 @@ select.form-control {
     list-style-position: inside;
     text-indent: -1.4em;
     margin-left: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .rheader {
+        padding: 1vw;
+        text-align: center;
+        display: flex;
+    }
+
+    .rheaderlike {
+        display: flex;
+        align-items: center;
+    }
+
+    .rheaderlike form {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .rheaderlikebtn {
+        display: flex;
+    }
+
+    .rheaderlikebtn a {
+        font-size: 1vw;
+        padding: 15%;
+    }
+
+    .rbodymenu ul {
+        overflow: hidden;
+    }
 }
 
 .rrating text {
