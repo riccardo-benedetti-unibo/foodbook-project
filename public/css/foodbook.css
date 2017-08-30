@@ -390,8 +390,8 @@ body {
     border: none;
 }
 
-.foodbookForm row{
-    padding: 5vw;
+.foodbookForm .row {
+    padding: 1vw;
 }
 
 .formContainer strong {
