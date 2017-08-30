@@ -566,6 +566,7 @@ select.form-control {
     }
 
     .rheaderlikebtn {
+        display: flex;
     }
 }
 
