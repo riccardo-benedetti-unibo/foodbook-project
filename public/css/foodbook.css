@@ -622,7 +622,8 @@ select.form-control {
 .rbodycontent li {
     list-style-type: square;
     list-style-position: inside;
-    text-indent: -1em;
+    text-indent: -1.4em;
+    margin-left: 30px;
 }
 
 .rrating text {
