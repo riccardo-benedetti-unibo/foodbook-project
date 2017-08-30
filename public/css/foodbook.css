@@ -390,6 +390,10 @@ body {
     border: none;
 }
 
+.foodbookForm row{
+    padding: 5vw;
+}
+
 .formContainer strong {
     padding: 20px;
 }
