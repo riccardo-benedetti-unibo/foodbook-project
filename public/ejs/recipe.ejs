@@ -61,7 +61,7 @@
 				<div class="col-9 rheaderinfo">
 					<h1><i><%= recipe.title %></i></h1>
 					<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
-					<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> Stars</b></p>
+					<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %> of 5 Stars</b></p>
 				</div>
 				<div class="col-3 rheaderlike">
 					<% if(user){ %>
@@ -98,7 +98,7 @@
 		</div>
 
         <% if(user){ %>
-		<div class="row" style="border-top: none">
+		<div class="row" style="border-top: none;border-bottom: none">
 			<div class="col-12 rdstars">
 				<strong>Rate this recipe: </strong>
 			</div>
