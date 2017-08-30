@@ -596,22 +596,22 @@ select.form-control {
     padding-bottom: 4%;
 }
 
-.rimage {
+.rbodyimage {
     width: 68%;
 }
 
-.rimage img {
+.rbodyimage img {
     border: none;
     width: 100%;
     height: 100%;
 }
 
-.rdetails {
+.rbodydetails {
     width: 28%;
     line-height: normal;
 }
 
-.rdetails a {
+.rbodydetails a {
     float: left;
     padding: 5px 15px 4px 6px;
     font-weight: bold;

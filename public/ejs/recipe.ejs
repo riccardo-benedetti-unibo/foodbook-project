@@ -76,21 +76,23 @@
 			</div>
 		</div>
 
-		<div class="row" style="border-bottom: none; border-top: none">
-			<div class="col-6">
-				<figure>
-					<img src='<%= recipe.image %>' alt="">
-				</figure><br>
-			</div>
-			<div class="col-6">
-				<div class="rdmenu">
-					<ul>
-						<li id="ingredients"><a href="#" onclick="javascript:displayIngredients();">Ingredients</a></li>
-						<li id="instructions"><a href="#" onclick="javascript:displayInstructions();">Instructions</a></li>
-					</ul>
+		<div class="rbody">
+			<div class="row" style="border-bottom: none; border-top: none">
+				<div class="col-6 rbodyimage">
+					<figure>
+						<img src='<%= recipe.image %>' alt="">
+					</figure><br>
 				</div>
-				<div class="rdcontent">
-					<p><ul id="rdinfo"></ul></p>
+				<div class="col-6 rbodydetails">
+					<div class="rbodymenu">
+						<ul>
+							<li id="ingredients"><a href="#" onclick="javascript:displayIngredients();">Ingredients</a></li>
+							<li id="instructions"><a href="#" onclick="javascript:displayInstructions();">Instructions</a></li>
+						</ul>
+					</div>
+					<div class="rbodycontent">
+						<p><ul id="rdinfo"></ul></p>
+					</div>
 				</div>
 			</div>
 		</div>
