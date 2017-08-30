@@ -568,6 +568,10 @@ select.form-control {
     .rheaderlikebtn {
         display: flex;
     }
+
+    .rheaderlikebtn a {
+        font-size: 1vw;
+    }
 }
 
 .rdmenu ul {
