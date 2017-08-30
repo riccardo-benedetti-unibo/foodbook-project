@@ -528,7 +528,6 @@ select.form-control {
 }
 
 .rheaderlikebtn {
-    font-size: 1.2em;
     cursor: pointer;
     color: #fff;
     border-radius: 50%;
@@ -538,11 +537,12 @@ select.form-control {
 }
 
 .rheaderlikebtn a {
-    font-size: 1.2em;
+    font-size: 120%;
     overflow: hidden;
     display: block;
     padding: 15%;
     text-overflow: ellipsis;
+    max-height: 8vw;
 }
 
 @media only screen and (min-width: 768px) {
