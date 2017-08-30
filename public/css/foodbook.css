@@ -601,14 +601,11 @@ select.form-control {
     color: rosybrown;
 }
 
-.rbodymenu {
-    overflow: scroll;
-}
-
 .rbodymenu ul {
     display: -webkit-box;
     border-bottom-style: double;
     border-bottom-color: brown;
+    overflow: scroll;
 }
 
 .rbodycontent {
