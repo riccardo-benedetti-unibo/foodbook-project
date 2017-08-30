@@ -11,49 +11,51 @@
 
 <body>
 <div class="container">
-	<div class="row" style="border-bottom: none">
-		<div class="col-12">
-            <% if (message.length > 0) { %>
-			<div class="alert alert-danger"><strong><%= message %></strong></div>
-            <% } %>
-		</div>
-	</div>
-
-	<form id="signin-form" action="/signin" method="post">
-		<div class="row" style="border-top:none;border-bottom: none">
-			<div class="col-6 formLabel" style="margin-right: 15px">
-				<strong><label for="email">Email:</label></strong>
-			</div>
-			<div class="col-6 formTextbox">
-				<input type="email" class="form-control" name="email" required>
+	<div class="foodbookForm">
+		<div class="row" style="border-bottom: none">
+			<div class="col-12">
+                <% if (message.length > 0) { %>
+				<div class="alert alert-danger"><strong><%= message %></strong></div>
+                <% } %>
 			</div>
 		</div>
 
-		<div class="row" style="border-top:none;border-bottom: none">
-			<div class="col-6 formLabel" style="margin-right: 15px">
-				<strong><label for="password">Password:</label></strong>
+		<form id="signin-form" action="/signin" method="post">
+			<div class="row" style="border-top:none;border-bottom: none">
+				<div class="col-6 formLabel" style="margin-right: 15px">
+					<strong><label for="email">Email:</label></strong>
+				</div>
+				<div class="col-6 formTextbox">
+					<input type="email" class="form-control" name="email" required>
+				</div>
 			</div>
-			<div class="col-6 formTextbox">
-				<input type="password" class="form-control" name="password" required>
-			</div>
-		</div>
 
-		<div class="row" style="border-top:none;border-bottom: none">
-			<div class="col-6 formButton" style="background-color:#04B404">
-				<a href="#" onclick="validateForm(); document.getElementById('signin-form').submit();">Sign In</a>
+			<div class="row" style="border-top:none;border-bottom: none">
+				<div class="col-6 formLabel" style="margin-right: 15px">
+					<strong><label for="password">Password:</label></strong>
+				</div>
+				<div class="col-6 formTextbox">
+					<input type="password" class="form-control" name="password" required>
+				</div>
 			</div>
-			<div class="col-6 formButton" style="background-color:#DF0101">
-				<a href="/">Back to Home</a>
-			</div>
-		</div>
-	</form>
 
-	<div class="row" style="border-top:none;">
-		<div class="col-12">
-			<strong>
-				<label>Need a Foodbook account? </label>
-				<a href="/register" style="color: brown; background-color: burlywood"><b>REGISTER</b></a>
-			</strong>
+			<div class="row" style="border-top:none;border-bottom: none">
+				<div class="col-6 formButton" style="background-color:#04B404">
+					<a href="#" onclick="validateForm(); document.getElementById('signin-form').submit();">Sign In</a>
+				</div>
+				<div class="col-6 formButton" style="background-color:#DF0101">
+					<a href="/">Back to Home</a>
+				</div>
+			</div>
+		</form>
+
+		<div class="row" style="border-top:none;">
+			<div class="col-12">
+				<strong>
+					<label>Need a Foodbook account? </label>
+					<a href="/register" style="color: brown; background-color: burlywood"><b>REGISTER</b></a>
+				</strong>
+			</div>
 		</div>
 	</div>
 </div>

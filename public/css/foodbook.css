@@ -386,6 +386,10 @@ body {
 
 /* Form Container and Components (Sign in & Register pages) */
 
+.foodbookForm [class*="col-"]{
+    border: none;
+}
+
 .formContainer strong {
     padding: 20px;
 }
