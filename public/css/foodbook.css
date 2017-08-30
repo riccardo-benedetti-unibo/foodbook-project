@@ -616,6 +616,7 @@ select.form-control {
     padding: 10px;
     text-align: left;
     list-style-type: square;
+    list-style-position: inside;
     color: brown;
     display: inline;
 }
