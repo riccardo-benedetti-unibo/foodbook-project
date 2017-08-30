@@ -537,12 +537,12 @@ select.form-control {
 }
 
 .rheaderlikebtn a {
-    font-size: 120%;
+    font-size: 70%;
     overflow: hidden;
     display: block;
-    padding: 5%;
+    padding: 3%;
     text-overflow: ellipsis;
-    max-height: 30vw;
+    max-height: 15vw;
 }
 
 @media only screen and (min-width: 768px) {
