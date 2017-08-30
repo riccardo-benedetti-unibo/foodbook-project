@@ -541,6 +541,8 @@ select.form-control {
     font-size: 1.2em;
     overflow: hidden;
     display: block;
+    padding: 15%;
+    text-overflow: ellipsis;
 }
 
 @media only screen and (min-width: 768px) {
@@ -564,8 +566,6 @@ select.form-control {
     }
 
     .rheaderlikebtn {
-        padding: 15%;
-        max-width: 100%;
     }
 }
 
