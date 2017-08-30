@@ -601,6 +601,10 @@ select.form-control {
     color: brown;
 }
 
+.rbodydetails a:active {
+    color: rosybrown;
+}
+
 .rbodymenu ul {
     padding: 10px 10px 0;
     display: -webkit-box;
