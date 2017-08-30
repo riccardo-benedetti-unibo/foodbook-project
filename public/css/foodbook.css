@@ -606,7 +606,6 @@ select.form-control {
 }
 
 .rdstars form {
-    display: flex;
     align-items: center;
 }
 
