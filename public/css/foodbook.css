@@ -615,10 +615,14 @@ select.form-control {
 .rbodycontent ul {
     padding: 10px;
     text-align: left;
-    list-style-type: square;
-    list-style-position: inside;
     color: brown;
     display: inline;
+}
+
+.rbodycontent ul {
+    list-style-type: square;
+    list-style-position: inside;
+    text-indent: -1em;
 }
 
 .rrating text {
