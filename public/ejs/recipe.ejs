@@ -91,7 +91,7 @@
 						</ul>
 					</div>
 					<div class="rbodycontent">
-						<p><ul id="rdinfo"></ul></p>
+						<ul id="rdinfo"></ul>
 					</div>
 				</div>
 			</div>
@@ -188,7 +188,7 @@
 
 		var p = document.getElementById('rdinfo');
 		p.innerHTML = "";
-		p.innerHTML = '<b>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins</b><br>';
+		p.innerHTML = '<b>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins<br></b>';
 		p.innerHTML += '<%= recipe.instructions %>';
     }
 </script>
