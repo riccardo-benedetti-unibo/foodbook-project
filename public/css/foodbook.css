@@ -614,11 +614,6 @@ select.form-control {
 
 .rbodymenu li {
     padding: 0 0 0 9px;
-    border-bottom: 1px solid brown;
-}
-
-.rbodymenu a:hover {
-    color: #52524d;
 }
 
 .rbodycontent ul {
