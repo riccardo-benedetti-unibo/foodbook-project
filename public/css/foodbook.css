@@ -575,7 +575,7 @@ select.form-control {
     display: -webkit-box;
     border-bottom-style: double;
     border-bottom-color: brown;
-    overflow: scroll;
+    overflow: overlay;
 }
 
 .rbodycontent {
