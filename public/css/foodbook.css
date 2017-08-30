@@ -575,25 +575,25 @@ select.form-control {
     }
 }
 
-.rdmenu ul {
+.rbody {
+    display: -webkit-box;
+    padding-bottom: 4%;
+}
+
+.rbodymenu ul {
     padding: 10px 10px 0;
     display: -webkit-box;
     border-bottom-style: double;
     border-bottom-color: brown;
 }
 
-.rdmenu li {
+.rbodymenu li {
     padding: 0 0 0 9px;
     border-bottom: 1px solid brown;
 }
 
-.rdmenu a:hover {
+.rbodymenu a:hover {
     color: #52524d;
-}
-
-.rbody {
-    display: -webkit-box;
-    padding-bottom: 4%;
 }
 
 .rbodyimage {
@@ -618,7 +618,7 @@ select.form-control {
     color: brown;
 }
 
-.rdcontent ul {
+.rbodycontent ul {
     padding: 10px;
     text-align: left;
     list-style-type: square;
