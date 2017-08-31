@@ -409,16 +409,14 @@ body {
 }
 
 .formButton {
-    display: flex;
-    padding: 15px 15px;
-    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 20px;
     cursor: pointer;
     color: #fff;
     border-radius: 15px;
-}
-
-.formButton a{
-
+    width: 70%;
 }
 
 .fdbRadio {
