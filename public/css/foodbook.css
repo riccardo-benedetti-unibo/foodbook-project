@@ -423,6 +423,7 @@ input.form-control {
 }
 
 select.form-control {
+    width: 50%;
     height: 28px;
     border-radius: 8px;
     background-color: white;
