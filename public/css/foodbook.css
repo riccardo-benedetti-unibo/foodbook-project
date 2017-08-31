@@ -426,7 +426,8 @@ body {
 
 input.form-control {
     border-radius: 8px;
-    height: 7vw;
+    height: 25px;
+    width: 90%;
 }
 
 select.form-control {
