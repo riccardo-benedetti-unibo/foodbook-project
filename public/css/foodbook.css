@@ -503,6 +503,10 @@ select.form-control {
         padding: 0;
     }
 
+    .foodbookForm .row {
+        padding: 3% 11%;
+    }
+
     input.form-control {
         width: 70%;
         float: left;
