@@ -432,7 +432,6 @@ input.form-control {
 }
 
 select.form-control {
-    width: 100px;
     height: 28px;
     border-radius: 8px;
 }
@@ -507,6 +506,10 @@ select.form-control {
 
     input.form-control {
         width: 70%;
+        float: left;
+    }
+
+    select.form-control {
         float: left;
     }
 
