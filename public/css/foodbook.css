@@ -499,10 +499,6 @@ select.form-control {
 }
 
 @media screen and (min-width: 768px) {
-    .foodbookForm [class*="col-"]{
-        padding-left: 2vw;
-    }
-
     .foodbookForm .row {
         padding: 3% 18%;
     }
