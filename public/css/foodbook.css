@@ -428,8 +428,8 @@ select.form-control {
 }
 
 .fdbRadio {
-    display: inline;
-    float: left;
+    display: inline-block;
+    justify-content: center;
     margin: 0 1vw;
 }
 
