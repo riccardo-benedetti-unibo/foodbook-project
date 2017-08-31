@@ -429,23 +429,26 @@ body {
 
 @media screen and (min-width: 768px) {
     .foodbookForm [class*="col-"]{
-
+        padding: 0;
     }
 
     .foodbookForm .row {
-        
+        padding: 0;
     }
 
-    .formTextbox {
-
+    input.form-control {
+        width: 70%;
+        float: left;
     }
 
     .formButton {
-
+        width: 50%;
+        height: 50px;
     }
 
     .formButton a {
-
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
