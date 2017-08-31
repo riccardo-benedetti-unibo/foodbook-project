@@ -509,6 +509,7 @@ select.form-control {
 
     select.form-control {
         float: left;
+        width: 85%;
     }
 
     .formButton {
@@ -525,10 +526,11 @@ select.form-control {
 
     .formRadio {
         margin: 0;
+        width: 48%;
     }
 
     .formRadio label {
-        width: 9vw;
+        width: 10vw;
     }
 }
 
