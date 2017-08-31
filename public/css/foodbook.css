@@ -426,10 +426,6 @@ input.form-control {
     white-space: nowrap;
 }
 
-.formBirthYear {
-    display: flex;
-}
-
 .fdbRadio {
     display: inline-block;
     margin: 20px;
