@@ -396,10 +396,6 @@ body {
     min-height: 5vw;
 }
 
-.formLabel {
-    text-align: center;
-}
-
 .formTextbox {
     text-align: center;
 }
@@ -431,7 +427,7 @@ input.form-control {
 }
 
 .formBirthYear {
-    
+    display: flex;
 }
 
 .fdbRadio {
