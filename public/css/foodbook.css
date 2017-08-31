@@ -444,6 +444,7 @@ select.form-control {
     line-height: 2em;
     text-align: center;
     text-indent: 30px;
+    font-size: 0.9em;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
