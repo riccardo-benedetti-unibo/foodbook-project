@@ -404,6 +404,13 @@ body {
     text-align: center;
 }
 
+input.form-control {
+    border-radius: 8px;
+    height: 25px;
+    width: 90%;
+    padding: 5px;
+}
+
 .formButton {
     text-align: center;
     margin: 0 auto;
@@ -423,43 +430,13 @@ body {
     white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) {
-    .foodbookForm [class*="col-"]{
-        padding: 0;
-    }
-
-    .foodbookForm .row {
-        padding: 3% 11%;
-    }
-
-    input.form-control {
-        width: 70%;
-        float: left;
-    }
-
-    .formButton {
-        width: 50%;
-        height: 50px;
-        display: grid;
-        align-content: center;
-    }
-
-    .formButton a {
-        display: inline-block;
-        vertical-align: middle;
-    }
+.formBirthYear {
+    
 }
 
 .fdbRadio {
     display: inline-block;
     margin: 20px;
-}
-
-input.form-control {
-    border-radius: 8px;
-    height: 25px;
-    width: 90%;
-    padding: 5px;
 }
 
 select.form-control {
@@ -525,6 +502,33 @@ select.form-control {
 
 .fdbRadio input:focus ~ label:before {
     box-shadow: 0 0 0 3px #999;
+}
+
+@media screen and (min-width: 768px) {
+    .foodbookForm [class*="col-"]{
+        padding: 0;
+    }
+
+    .foodbookForm .row {
+        padding: 3% 11%;
+    }
+
+    input.form-control {
+        width: 70%;
+        float: left;
+    }
+
+    .formButton {
+        width: 50%;
+        height: 50px;
+        display: grid;
+        align-content: center;
+    }
+
+    .formButton a {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* Recipe Detail Page Elements */
