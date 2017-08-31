@@ -500,7 +500,7 @@ select.form-control {
 
 @media screen and (min-width: 768px) {
     .foodbookForm [class*="col-"]{
-        padding-left: 1vw;
+        padding-left: 2vw;
     }
 
     .foodbookForm .row {
@@ -509,6 +509,7 @@ select.form-control {
 
     input.form-control {
         float: left;
+        width: 100%;
     }
 
     select.form-control {
