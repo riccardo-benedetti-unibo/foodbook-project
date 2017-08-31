@@ -433,6 +433,10 @@ select.form-control {
     margin: 0 1vw;
 }
 
+.fdbRadio input:empty {
+    margin: -9999px;
+}
+
 .fdbRadio input:empty ~ label {
     position: relative;
     float: left;
