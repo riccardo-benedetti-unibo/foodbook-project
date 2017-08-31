@@ -444,6 +444,8 @@ body {
     .formButton {
         width: 50%;
         height: 50px;
+        display: grid;
+        align-content: center;
     }
 
     .formButton a {
