@@ -427,6 +427,28 @@ body {
     white-space: nowrap;
 }
 
+@media screen and (min-width: 768px) {
+    .foodbookForm [class*="col-"]{
+
+    }
+
+    .foodbookForm .row {
+        
+    }
+
+    .formTextbox {
+
+    }
+
+    .formButton {
+
+    }
+
+    .formButton a {
+
+    }
+}
+
 .fdbRadio {
     display: inline-block;
     margin: 20px;
