@@ -516,6 +516,10 @@ select.form-control {
         float: left;
     }
 
+    .formlabel {
+        
+    }
+
     .formButton {
         width: 50%;
         height: 50px;
