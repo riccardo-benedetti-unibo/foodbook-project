@@ -388,10 +388,12 @@ body {
 
 .foodbookForm [class*="col-"]{
     border: none;
+    padding: 1vw;
 }
 
 .foodbookForm .row {
-    padding: 1vw;
+    padding: 2vw;
+    min-height: 5vw;
 }
 
 .formContainer strong {
@@ -399,11 +401,11 @@ body {
 }
 
 .formLabel {
-
+    text-align: center;
 }
 
 .formTextbox {
-
+    text-align: center;
 }
 
 .formButton {
@@ -423,9 +425,8 @@ body {
 }
 
 input.form-control {
-    width: inherit;
-    height: inherit;
     border-radius: 8px;
+    height: 7vw;
 }
 
 select.form-control {
