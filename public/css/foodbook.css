@@ -429,17 +429,17 @@ select.form-control {
     background-color: white;
 }
 
-.fdbRadio {
+.formRadio {
     display: inline-block;
     justify-content: center;
     margin: 0 1vw;
 }
 
-.fdbRadio input:empty {
+.formRadio input:empty {
     margin: -9999px;
 }
 
-.fdbRadio input:empty ~ label {
+.formRadio input:empty ~ label {
     position: relative;
     float: left;
     line-height: 2em;
@@ -453,14 +453,14 @@ select.form-control {
     user-select: none;
 }
 
-.fdbRadio label {
+.formRadio label {
     padding: 0 1vw;
     width: 25vw;
     border-radius: 3px;
     border: 1px solid #D1D3D4;
 }
 
-.fdbRadio input:empty ~ label:before {
+.formRadio input:empty ~ label:before {
     position: absolute;
     display: block;
     top: 0;
@@ -472,29 +472,29 @@ select.form-control {
     border-radius: 3px 0 0 3px;
 }
 
-.fdbRadio input:hover:not(:checked) ~ label:before {
+.formRadio input:hover:not(:checked) ~ label:before {
     content: '\2714';
     text-indent: 0px;
     color: brown;
     background-color: #4DCB6D;
 }
 
-.fdbRadio input:hover:not(:checked) ~ label {
+.formRadio input:hover:not(:checked) ~ label {
     color: #888;
 }
 
-.fdbRadio input:checked ~ label:before {
+.formRadio input:checked ~ label:before {
     content:'\2714';
     text-indent: 0px;
     color: brown;
     background-color: #4DCB6D;
 }
 
-.fdbRadio input:checked ~ label {
+.formRadio input:checked ~ label {
     color: #777;
 }
 
-.fdbRadio input:focus ~ label:before {
+.formRadio input:focus ~ label:before {
     box-shadow: 0 0 0 3px #999;
 }
 
@@ -523,7 +523,11 @@ select.form-control {
         vertical-align: middle;
     }
 
-    .fdbRadio label {
+    .formRadio {
+        margin: 0;
+    }
+
+    .formRadio label {
         width: 9vw;
     }
 }
