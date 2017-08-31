@@ -396,10 +396,6 @@ body {
     min-height: 5vw;
 }
 
-.formTextbox {
-    text-align: center;
-}
-
 input.form-control {
     border-radius: 8px;
     height: 25px;
