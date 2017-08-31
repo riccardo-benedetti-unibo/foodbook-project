@@ -425,6 +425,7 @@ input.form-control {
 select.form-control {
     height: 28px;
     border-radius: 8px;
+    background-color: white;
 }
 
 .fdbRadio {
