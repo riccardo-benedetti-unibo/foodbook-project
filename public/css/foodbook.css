@@ -433,7 +433,7 @@ body {
     }
 
     .foodbookForm .row {
-        padding: 0;
+        padding: 0 180px;
     }
 
     input.form-control {
