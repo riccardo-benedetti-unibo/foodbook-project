@@ -517,10 +517,11 @@ select.form-control {
     }
 
     .formButton {
-        width: 50%;
+        width: 70%;
         height: 50px;
         display: grid;
         align-content: center;
+        float: left;
     }
 
     .formButton a {
