@@ -472,7 +472,7 @@ select.form-control {
 
 .fdbRadio input:hover:not(:checked) ~ label:before {
     content: '\2714';
-    text-indent: 0px;
+    text-indent: 0.1px;
     color: brown;
     background-color: #4DCB6D;
 }
