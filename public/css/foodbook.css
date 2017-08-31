@@ -504,7 +504,7 @@ select.form-control {
     }
 
     .foodbookForm .row {
-        padding: 3% 11%;
+        padding: 3% 18%;
     }
 
     input.form-control {
@@ -517,7 +517,6 @@ select.form-control {
     }
 
     .formButton {
-        width: 70%;
         height: 50px;
         display: grid;
         align-content: center;
