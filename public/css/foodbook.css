@@ -422,35 +422,35 @@ input.form-control {
     white-space: nowrap;
 }
 
-.fdbRadio {
-    display: inline-block;
-}
-
 select.form-control {
     height: 28px;
     border-radius: 8px;
 }
 
-.fdbRadio label {
-    width: 200px;
-    border-radius: 3px;
-    border: 1px solid #D1D3D4
-}
-
-.fdbRadio input:empty {
-    margin-left: -9999px;
+.fdbRadio {
+    display: inline;
+    float: left;
+    margin: 0 1vw;
 }
 
 .fdbRadio input:empty ~ label {
     position: relative;
     float: left;
-    line-height: 2.5em;
-    text-indent: 3.25em;
+    line-height: 2em;
+    text-align: center;
+    text-indent: 30px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.fdbRadio label {
+    padding: 0 1vw;
+    width: 25vw;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
 }
 
 .fdbRadio input:empty ~ label:before {
@@ -460,15 +460,16 @@ select.form-control {
     bottom: 0;
     left: 0;
     content: '';
-    width: 2.5em;
+    width: 2em;
     background: #D1D3D4;
     border-radius: 3px 0 0 3px;
 }
 
 .fdbRadio input:hover:not(:checked) ~ label:before {
-    content:'\2714';
-    text-indent: .9em;
-    color: #C2C2C2;
+    content: '\2714';
+    text-indent: 0.6em;
+    color: #9CE2AE;
+    background-color: #4DCB6D;
 }
 
 .fdbRadio input:hover:not(:checked) ~ label {
