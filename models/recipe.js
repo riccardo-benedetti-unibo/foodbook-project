@@ -12,6 +12,7 @@ var recipeSchema = new mongoose.Schema({
 	instructions	: String,
 	ingredients 	: ['Ingredient'],
 	ratings			: ['Rating'],
+	bayesianRating  : Number,
 	likes			: Number
 });
 
