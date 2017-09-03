@@ -109,9 +109,13 @@
         recipesData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipesData);
 
+        console.log(options);
+
         optionsRic = options + {
             title: 'TOP 10 POPULAR RECIPES IN COOKBOOKS'
         };
+
+        console.log(optionsRic);
 
         var chart = new google.visualization.BarChart(document.getElementById('ric_graph'));
 
