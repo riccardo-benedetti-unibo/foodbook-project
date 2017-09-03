@@ -9,7 +9,7 @@
 	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onload="javascript:init()">
 <div class="container">
 	<div class="row" style="border-bottom: none">
 		<div class="menuContainer" id="menuMobile">
@@ -70,24 +70,26 @@
 </body>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
-    options = {
-        backgroundColor: {
-            fill:'transparent',
-            stroke: 'rosybrown',
-            strokeWidth: 3
-        },
-        height : 600,
-        bar: {
-            groupWidth: "70%"
-        },
-        hAxis: {
-            title: '',
-            minValue: 0
-        },
-        vAxis: {
-            title: ''
-        },
-        colors : ['rosybrown']
+	function init() {
+        options = {
+            backgroundColor: {
+                fill:'transparent',
+                stroke: 'rosybrown',
+                strokeWidth: 3
+            },
+            height : 600,
+            bar: {
+                groupWidth: "70%"
+            },
+            hAxis: {
+                title: '',
+                minValue: 0
+            },
+            vAxis: {
+                title: ''
+            },
+            colors : ['rosybrown']
+        }
     }
 </script>
 
