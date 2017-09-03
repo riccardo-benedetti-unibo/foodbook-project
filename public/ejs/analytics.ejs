@@ -69,7 +69,27 @@
 </div>
 </body>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+    var options = {
+        backgroundColor: {
+            fill:'transparent',
+            stroke: 'rosybrown',
+            strokeWidth: 3
+        },
+        height : 600,
+        bar: {
+            groupWidth: "70%"
+        },
+        hAxis: {
+            title: '',
+            minValue: 0
+        },
+        vAxis: {
+            title: ''
+        },
+        colors : ['rosybrown']
+    }
+</script>
 
 <script type="text/javascript">
     google.charts.load('current', {packages: ['corechart', 'bar']});
@@ -85,25 +105,8 @@
         recipesData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipesData);
 
-        var options = {
-            title: 'TOP 10 POPULAR RECIPES IN COOKBOOKS',
-            backgroundColor: {
-                fill:'transparent',
-                stroke: 'rosybrown',
-                strokeWidth: 3
-			},
-			height : 600,
-            bar: {
-                groupWidth: "70%"
-			},
-            hAxis: {
-                title: '',
-                minValue: 0
-            },
-            vAxis: {
-                title: ''
-            },
-			colors : ['rosybrown']
+        options = {
+            title: 'TOP 10 POPULAR RECIPES IN COOKBOOKS'
         };
 
         var chart = new google.visualization.BarChart(document.getElementById('ric_graph'));
@@ -127,24 +130,9 @@
         var data = google.visualization.arrayToDataTable(recipeData);
 
         var options = {
-            backgroundColor: {
-                fill:'transparent',
-                stroke: 'rosybrown',
-                strokeWidth: 3
-            },
-            height : 600,
-            bar: {
-                groupWidth: "70%"
-            },
             hAxis: {
-                title: '',
-                minValue: 0,
 				maxValue: 5
-            },
-            vAxis: {
-                title: ''
-            },
-            colors : ['rosybrown']
+            }
         };
 
         var chart = new google.visualization.BarChart(document.getElementById('rr_graph'));
