@@ -714,10 +714,11 @@ select.form-control {
     height: 650px;
 }
 
-.fdbgraph backgroundColor {
+#rr_graph background-color{
     fill:'transparent';
     stroke: 'rosybrown';
     strokeWidth: 3;
+
 }
 
 /* Top level tags settings */
