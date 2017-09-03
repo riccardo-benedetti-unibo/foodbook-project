@@ -7,22 +7,48 @@ var configDB = require('../database/database.js');
 mongoose.connection.openUri(configDB.url);
 
 var c = 0;
-
-Recipe.find({}, {}, {}, function (err, recipe) {
+var m = 1;
+Recipe.find({}, {}, {}, function (err, recipes) {
     if(err){
         throw err;
     }else{
-        recipe.ratings.forEach(function (err, rating){
-            if(err) {
-                throw err;
-            }else{
-                c += rating['rate'];
+        var n = 0;
+        for(var i=0; i < recipes.length; i++){
+            for(var j=0; j < recipes[i].ratings.length; j++){
+                if(recipes[i].ratings[j].rate){
+                    c += recipes[i].ratings[j].rate;
+                    n++;
+                }
             }
-        });
+        }
+
+        c/=n;
+
+        for(var i=0; i < recipes.length; i++){
+            var v = recipes[i].ratings.length;
+            var R = 0;
+
+            for(var j=0; j < v; j++){
+                R+=recipes[i].ratings[j].rate;
+            }
+
+            if(v > 0){
+                R /= v;
+                var bayesian = (v / (v + m)) * R + (m / (v + m)) * c;
+
+                recipes[i].bayesianRating = bayesian;
+
+                recipes[i].save(function (err) {
+                    if(err){
+                        throw err;
+                    }
+                });
+            }
+        }
     }
-}).then(function () {
-    console.log(c);
 });
+
+
 
 /*stream.on('data', function (recipe) {
     var v = recipe.ratings.count();
@@ -40,5 +66,3 @@ Recipe.find({}, {}, {}, function (err, recipe) {
     mongoose.connection.close();
     throw err;
 });*/
-
-mongoose.connection.close();

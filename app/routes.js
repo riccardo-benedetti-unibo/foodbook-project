@@ -244,13 +244,13 @@ module.exports = function(app, passport) {
             }
         });
 
-        Recipe.find({}, {}, {limit:10}, function(err, results){
+        Recipe.find({}, {}, {sort:{bayesianRate: -1}, limit:10}, function(err, results){
             if (err) {
                 throw err;
             } else {
                 var rr = [];
                 results.forEach(function (rec) {
-                    rr.push({"name" : rec.title, "added" : rec.likes });
+                    rr.push({"name" : rec.title, "added" : rec.bayesianRating });
                 });
                 recipeRating = rr;
                 doRender();
