@@ -192,6 +192,8 @@ body {
     .menuContainer a {
         width: 100%;
         text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     .menuContainer .icon {
