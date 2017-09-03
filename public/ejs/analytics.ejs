@@ -79,7 +79,8 @@
                 stroke: 'rosybrown',
                 strokeWidth: 3
             },
-            height : 600,
+            height : '600px',
+			width : '100%',
             bar: {
                 groupWidth: "70%"
             },
@@ -109,12 +110,8 @@
         recipesData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipesData);
 
-        console.log(options);
-
         optionsRic = options;
         optionsRic.title = 'TOP 10 POPULAR RECIPES IN COOKBOOKS';
-
-        console.log(optionsRic);
 
         var chart = new google.visualization.BarChart(document.getElementById('ric_graph'));
 
