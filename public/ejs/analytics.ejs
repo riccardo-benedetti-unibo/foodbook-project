@@ -59,7 +59,7 @@
             <% recipeInCookbook.forEach(function(ric,i) {%>
 			<input type="hidden" class="recipeInCookbook" name="recipeInCookbook" recipename="<%= ric.name %>"  cookbooks="<%= ric.added %>" value="<%= ric %>" />
             <% }); %>
-			<div id="ric_graph"></div>
+			<div id="ric_graph" class="fdbChart"></div>
 		</div>
 	</div>
 	<div class="row fdbgraph" style="border-top: none">
@@ -67,7 +67,7 @@
 			<% recipeRating.forEach(function(rr,i) {%>
 				<input type="hidden" class="recipeRating" name="recipeRating" recipename="<%= rr.name %>"  rating="<%= rr.rating %>" value="<%= rr %>" />
 			<% }); %>
-			<div id="rr_graph"></div>
+			<div id="rr_graph" class="fdbChart"></div>
 		</div>
 	</div>
 </div>
