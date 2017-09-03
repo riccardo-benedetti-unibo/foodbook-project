@@ -713,6 +713,10 @@ select.form-control {
     border-color: rosybrown;
 }
 
+google.visualization.BarChart {
+    height: 100px;
+}
+
 /* Top level tags settings */
 
 ul {
