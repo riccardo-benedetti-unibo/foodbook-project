@@ -253,6 +253,7 @@ module.exports = function(app, passport) {
                     rr.push({"name" : rec.title, "rating" : rec.bayesianRating });
                 });
                 recipeRating = rr;
+                console.log(rr)
                 doRender();
             }
         });

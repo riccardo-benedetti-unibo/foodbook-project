@@ -35,15 +35,16 @@ Recipe.find({}, {}, {}, function (err, recipes) {
             if(v > 0){
                 R /= v;
                 var bayesian = (v / (v + m)) * R + (m / (v + m)) * c;
-
                 recipes[i].bayesianRating = bayesian;
-
-                recipes[i].save(function (err) {
-                    if(err){
-                        throw err;
-                    }
-                });
+            }else{
+                recipes[i].bayesianRating = 0;
             }
+
+            recipes[i].save(function (err) {
+                if(err){
+                    throw err;
+                }
+            });
         }
     }
 });
