@@ -120,6 +120,13 @@
 
         chart.draw(data, optionsRic);
     }
+
+    if (window.addEventListener) {
+        window.addEventListener('resize', drawRic);
+    }
+    else {
+        window.attachEvent('onresize', drawRic);
+    }
 </script>
 
 <script type="text/javascript">
@@ -141,6 +148,13 @@
         var chart = new google.visualization.BarChart(document.getElementById('rr_graph'));
 
         chart.draw(data, optionsRr);
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener('resize', drawRic);
+    }
+    else {
+        window.attachEvent('onresize', drawRic);
     }
 </script>
 
