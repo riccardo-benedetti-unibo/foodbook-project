@@ -249,9 +249,9 @@ module.exports = function(app, passport) {
                 throw err;
             } else {
                 var rr = [];
-                results.forEach(function (rec) {
+                for(rec in results){
                     rr.push({"name" : rec.title, "rating" : rec.bayesianRating });
-                });
+                }
                 recipeRating = rr;
                 doRender();
             }
