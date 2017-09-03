@@ -73,9 +73,10 @@
 
 <script type="text/javascript">
     google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawRic);
     var recipeInCookbook = document.getElementsByClassName('recipeInCookbook');
 
-    function drawBasic() {
+    function drawRic() {
         var recipesData = new Array();
         recipesData.push(['Recipes', 'Cookbooks']);
         for(var r=0; r<recipeInCookbook.length; r++){
@@ -113,10 +114,10 @@
 
 <script type="text/javascript">
     google.charts.load('current', {packages: ['corechart', 'bar']});
-    google.charts.setOnLoadCallback(drawBasic);
+    google.charts.setOnLoadCallback(drawRr);
     var recipeRating = document.getElementsByClassName('recipeRating');
 
-    function drawBasic() {
+    function drawRr() {
         var recipeData = new Array();
         recipeData.push(['Recipes', 'Ratings',]);
         for(var i=0; i<recipeRating.length; i++){
