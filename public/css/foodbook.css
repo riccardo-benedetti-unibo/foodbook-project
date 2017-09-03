@@ -711,14 +711,6 @@ select.form-control {
     padding: 2%;
     border-style: ridge;
     border-color: rosybrown;
-    height: 650px;
-}
-
-#rr_graph.background-color {
-    fill:'transparent';
-    stroke: 'rosybrown';
-    strokeWidth: 3;
-
 }
 
 /* Top level tags settings */
