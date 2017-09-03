@@ -251,6 +251,7 @@ module.exports = function(app, passport) {
                 var rr = [];
                 for(var i=0; i<results.length; i++){
                     rr.push({"name" : results[i].title, "rating" : results[i].bayesianRating });
+                    console.log(results[i]);
                 }
                 recipeRating = rr;
                 doRender();
