@@ -250,8 +250,7 @@ module.exports = function(app, passport) {
             } else {
                 var rr = [];
                 results.forEach(function (rec) {
-                    rr.push({"name" : rec.title, "added" : rec.bayesianRating });
-                    console.log(rec);
+                    rr.push({"name" : rec.title, "rating" : rec.bayesianRating });
                 });
                 recipeRating = rr;
                 doRender();
