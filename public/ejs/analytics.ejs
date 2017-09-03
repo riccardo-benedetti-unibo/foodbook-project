@@ -136,12 +136,8 @@
         recipeData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipeData);
 
-        var optionsRr = options + {
-            hAxis: {
-				maxValue: 5
-            }
-        };
-
+        var optionsRr = options;
+        optionsRr.hAxis.maxValue = 5;
         var chart = new google.visualization.BarChart(document.getElementById('rr_graph'));
 
         chart.draw(data, optionsRr);
