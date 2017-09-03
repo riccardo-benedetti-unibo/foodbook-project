@@ -95,6 +95,7 @@
     google.charts.load('current', {packages: ['corechart', 'bar']});
     google.charts.setOnLoadCallback(drawRic);
     var recipeInCookbook = document.getElementsByClassName('recipeInCookbook');
+    var optionsRic = options;
 
     function drawRic() {
         var recipesData = new Array();
@@ -105,7 +106,7 @@
         recipesData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipesData);
 
-        var optionsRic = "" + options + {
+        optionsRic += {
             title: 'TOP 10 POPULAR RECIPES IN COOKBOOKS'
         };
 
