@@ -714,7 +714,7 @@ select.form-control {
     height: 650px;
 }
 
-#rr_graph background-color{
+#rr_graph.background-color {
     fill:'transparent';
     stroke: 'rosybrown';
     strokeWidth: 3;
