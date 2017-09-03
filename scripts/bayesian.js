@@ -35,9 +35,9 @@ Recipe.find({}, {}, {}, function (err, recipes) {
             if(v > 0){
                 R /= v;
                 var bayesian = (v / (v + m)) * R + (m / (v + m)) * c;
-                recipes[i].bayesianRating = bayesian;
+                recipes[i].bayesianRating = bayesian.toFixed(2);
             }else{
-                recipes[i].bayesianRating = 0;
+                recipes[i].bayesianRating = (0).toFixed(2);
             }
 
             recipes[i].save(function (err) {
