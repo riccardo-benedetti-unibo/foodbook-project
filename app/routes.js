@@ -244,7 +244,7 @@ module.exports = function(app, passport) {
             }
         });
 
-        Recipe.find({}, {sort:{bayesianRate: -1}, limit:10}, function(err, results){
+        Recipe.find( {sort:{bayesianRate: -1}, limit:10}, function(err, results){
             if (err) {
                 throw err;
             } else {
