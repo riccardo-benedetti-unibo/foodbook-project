@@ -70,7 +70,7 @@
 </body>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
-    document.options = {
+    options = {
         backgroundColor: {
             fill:'transparent',
             stroke: 'rosybrown',
@@ -96,7 +96,7 @@
     google.charts.setOnLoadCallback(drawRic);
     var recipeInCookbook = document.getElementsByClassName('recipeInCookbook');
 
-    console.log(document.options);
+    console.log(options);
 
     function drawRic() {
         var recipesData = new Array();
