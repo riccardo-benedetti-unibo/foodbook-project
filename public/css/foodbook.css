@@ -713,7 +713,7 @@ select.form-control {
     border-color: rosybrown;
 }
 
-google.visualization.BarChart {
+#rr_graph {
     height: 100px;
 }
 
