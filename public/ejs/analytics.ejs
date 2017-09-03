@@ -105,13 +105,13 @@
         recipesData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipesData);
 
-        options += {
+        var optionsRic = options + {
             title: 'TOP 10 POPULAR RECIPES IN COOKBOOKS'
         };
 
         var chart = new google.visualization.BarChart(document.getElementById('ric_graph'));
 
-        chart.draw(data, options);
+        chart.draw(data, optionsRic);
     }
 </script>
 
@@ -129,7 +129,7 @@
         recipeData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipeData);
 
-        options += {
+        var optionsRr = options + {
             hAxis: {
 				maxValue: 5
             }
