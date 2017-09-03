@@ -244,15 +244,14 @@ module.exports = function(app, passport) {
             }
         });
 
-        Recipe.find({}).sort({bayesianRate: -1}).limit(10).exec(function(err, results){
+        Recipe.find({}, {}, {sort:{bayesianRating: -1}, limit:10}, function(err, results){
             if (err) {
                 throw err;
             } else {
                 var rr = [];
-                for(var i=0; i<results.length; i++){
-                    rr.push({"name" : results[i].title, "rating" : results[i].bayesianRating });
-                    console.log(results[i]);
-                }
+                results.forEach(function (rec) {
+                    rr.push({"name" : rec.title, "added" : rec.bayesianRating });
+                });
                 recipeRating = rr;
                 doRender();
             }
