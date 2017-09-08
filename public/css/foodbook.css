@@ -46,6 +46,10 @@
     overflow: auto;
 }
 
+.row.rowNoBorders {
+    border: none;
+}
+
 .row::after {
     content: "";
     clear: both;
