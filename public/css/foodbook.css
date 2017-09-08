@@ -180,6 +180,10 @@ body {
     border: none;
 }
 
+.menuContainer .icon a {
+    font-size: 15px;
+}
+
 .menuContainer span {
     display: block;
     color: brown;

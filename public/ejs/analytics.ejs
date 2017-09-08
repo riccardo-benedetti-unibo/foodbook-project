@@ -48,12 +48,12 @@
 			</div>
             <% } %>
 			<div class="icon">
-				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
+				<a href="javascript:void(0);" onclick="responsiveHandler()">&#9776;</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="row fdbgraph" style="border-bottom: none">
+	<div class="row rowNoBorderBottom fdbgraph">
 		<div class="col-12">
             <% recipeInCookbook.forEach(function(ric,i) {%>
 			<input type="hidden" class="recipeInCookbook" name="recipeInCookbook" data-recipename="<%= ric.name %>"  data-cookbooks="<%= ric.added %>" value="<%= ric %>" />
@@ -61,7 +61,7 @@
 			<div id="ric_graph" class="fdbChart"></div>
 		</div>
 	</div>
-	<div class="row fdbgraph" style="border-top: none">
+	<div class="row rowNoBorderBottom fdbgraph">
 		<div class="col-12">
 			<% recipeRating.forEach(function(rr,i) {%>
 				<input type="hidden" class="recipeRating" name="recipeRating" data-recipename="<%= rr.name %>"  data-rating="<%= rr.rating %>" value="<%= rr %>" />
