@@ -91,6 +91,11 @@ body {
     flex-direction: column;
 }
 
+.container.indexContainer {
+    align-items: center;
+    justify-content: center
+}
+
 @media only screen and (min-width: 768px) {
     .container {
         min-height: 50vh;
