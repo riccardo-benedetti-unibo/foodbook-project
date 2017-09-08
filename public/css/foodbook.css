@@ -170,7 +170,7 @@ body {
     top: 50px;
 }
 
-.menuContainer p {
+.menuContainer span {
     display: block;
     color: brown;
     text-align: right;
@@ -194,6 +194,9 @@ body {
     float: right;
     right: 0px;
     top: 0;
+    height: 100%;
+    text-align: right;
+    color: brown;
 }
 
 @media screen and (min-width: 768px){

@@ -26,8 +26,10 @@
 				<a href="/logout">Logout</a>
 			</div>
 			<div class="col-4 colNoBorder">
-				Logged as:</br>
-				<b><%= user %></b>
+				<span>
+					Logged as:</br>
+					<b><%= user %></b>
+				</span>
 			</div>
             <% } else { %>
 			<div class="col-2">
@@ -40,7 +42,9 @@
 				<a href="/analytics">Analytics</a>
 			</div>
 			<div class="col-6 colNoBorder">
-				Please, sign in to </br> access your Cookbook
+				<span>
+					Please, sign in to </br> access your Cookbook
+				</span>
 			</div>
             <% } %>
 			<div class="icon" style="float: right; border: none;">
