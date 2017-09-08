@@ -108,7 +108,7 @@
         var recipesData = new Array();
         recipesData.push(['Recipes', 'Cookbooks']);
         for(var r=0; r<recipeInCookbook.length; r++){
-            recipesData.push([recipeInCookbook[r].getAttribute("recipename"), parseInt(recipeInCookbook[r].getAttribute("cookbooks"))]);
+            recipesData.push([recipeInCookbook[r].getAttribute("data-recipename"), parseInt(recipeInCookbook[r].getAttribute("data-cookbooks"))]);
         };
         recipesData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipesData);
@@ -138,7 +138,7 @@
         var recipeData = new Array();
         recipeData.push(['Recipes', 'Ratings',]);
         for(var i=0; i<recipeRating.length; i++){
-            recipeData.push([recipeRating[i].getAttribute("recipename"), parseFloat(recipeRating[i].getAttribute("rating"))]);
+            recipeData.push([recipeRating[i].getAttribute("data-recipename"), parseFloat(recipeRating[i].getAttribute("data-rating"))]);
         };
         recipeData.sort(function(a, b){return b[1]-a[1]});
         var data = google.visualization.arrayToDataTable(recipeData);
