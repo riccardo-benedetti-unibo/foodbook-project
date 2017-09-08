@@ -170,7 +170,7 @@ body {
     top: 50px;
 }
 
-.menuContainer text {
+.menuContainer p {
     display: block;
     color: brown;
     text-align: right;
