@@ -11,7 +11,7 @@
 
 <body onload="javascript:init()">
 <div class="container">
-	<div class="row" style="border-bottom: none">
+	<div class="row rowNoBorderBottom">
 		<div class="menuContainer" id="menuMobile">
             <% if(user){ %>
 			<div class="col-2">
@@ -26,11 +26,11 @@
 			<div class="col-2">
 				<a href="/logout">Logout</a>
 			</div>
-			<div class="col-4" style="float: right; border: none;">
-				<text>
+			<div class="col-4 colNoBorder">
+				<span>
 					Logged as:</br>
-					<b><%= user %></b>
-				</text>
+					<strong><%= user %></strong>
+				</span>
 			</div>
             <% } else { %>
 			<div class="col-2">
@@ -42,19 +42,19 @@
 			<div class="col-2">
 				<a href="/analytics">Analytics</a>
 			</div>
-			<div class="col-6" style="float: right; border: none;">
-				<text>
-					Please, sign in to </br> access your Cookbook
-				</text>
+			<div class="col-6 colNoBorder">
+				<span>
+					Please, sign in to <br /> access your Cookbook
+				</span>
 			</div>
             <% } %>
-			<div class="icon" style="float: right; border: none;">
-				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
+			<div class="icon">
+				<a href="javascript:void(0);" onclick="responsiveHandler()">&#9776;</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="row" style="border-bottom: none">
+	<div class="row rowNoBorderBottom">
 		<div class="recipeContainer">
 			<h1><i><%= user %>'s Cookbook</i></h1>
 			<ul>
@@ -100,7 +100,7 @@
 		</div>
 	</div>
 </div>
-</body>
+
 
 <script>
     function init() {
@@ -147,5 +147,8 @@
         }
     }
 </script>
+
+
+</body>
 
 </html>
