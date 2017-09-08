@@ -54,6 +54,14 @@
     border: none;
 }
 
+.row.rowNoBorderBottom {
+    border-bottom: none;
+}
+
+.row.rowNoBorderTop {
+    border-top: none;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -168,6 +176,8 @@ body {
     position: absolute;
     right: 0;
     top: 50px;
+    float: right;
+    border: none;
 }
 
 .menuContainer span {
