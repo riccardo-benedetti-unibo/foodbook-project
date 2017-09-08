@@ -173,8 +173,7 @@ body {
 .menuContainer span {
     display: block;
     color: brown;
-    text-align: right;
-    margin: 2%;
+    margin: 1% 2%;
 }
 
 .menuContainer div:not(:nth-last-child(-n+2)) {
