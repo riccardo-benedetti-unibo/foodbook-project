@@ -2,9 +2,8 @@
 <!doctype html>
 <html>
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title><%= recipe.title %></title>
 	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -12,7 +11,7 @@
 	
 <body onload="javascript:init()">
 <div class="container">
-	<div class="row">
+	<div class="row rowNoBorderBottom">
 		<div class="menuContainer" id="menuMobile">
             <% if(user){ %>
 			<div class="col-2">
@@ -27,11 +26,11 @@
 			<div class="col-2">
 				<a href="/logout">Logout</a>
 			</div>
-			<div class="col-4" style="float: right; border: none;">
-				<text>
-					Logged as:</br>
-					<b><%= user %></b>
-				</text>
+			<div class="col-4 colNoBorder">
+				<span>
+					Logged as:<br />
+					<strong><%= user %></strong>
+				</span>
 			</div>
             <% } else { %>
 			<div class="col-2">
@@ -43,14 +42,14 @@
 			<div class="col-2">
 				<a href="/analytics">Analytics</a>
 			</div>
-			<div class="col-6" style="float: right; border: none;">
-				<text>
-					Please, sign in to </br> access your Cookbook
-				</text>
+			<div class="col-6 colNoBorder">
+				<span>
+					Please, sign in to <br /> access your Cookbook
+				</span>
 			</div>
             <% } %>
-			<div class="icon" style="float: right; border: none;">
-				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
+			<div class="icon">
+				<a href="javascript:void(0);" onclick="responsiveHandler()">&#9776;</a>
 			</div>
 		</div>
 	</div>
@@ -127,25 +126,25 @@
 		<div class="row" style="border-top: none"></div>
 	</div>
 </div>
-</body>
+
 
 <script type="text/javascript">
-	function toggle() {
-		var textElem = document.getElementById("btnLike");
-		var btnElem = document.getElementById("divLike");
-		if (textElem.text=="REMOVE FROM COOKBOOK"){
+    function toggle() {
+        var textElem = document.getElementById("btnLike");
+        var btnElem = document.getElementById("divLike");
+        if (textElem.text=="REMOVE FROM COOKBOOK"){
             textElem.text = "ADD TO COOKBOOK";
             btnElem.style.backgroundColor = "#e6b71d";
-		} else {
+        } else {
             textElem.text = "REMOVE FROM COOKBOOK";
             btnElem.style.backgroundColor = "#bdbdae";
-		}
+        }
     }
 </script>
 
 <script type="text/javascript">
-	function init() {
-	    if('<%= user %>' != '') {
+    function init() {
+        if('<%= user %>' != '') {
             window.state = '<%= likestate %>';
             window.likes = '<%= recipe.likes %>';
             var textElem = document.getElementById("btnLike");
@@ -163,20 +162,20 @@
                     $rstars.filter('[value=<%= userRate %>]').prop('checked', true);
                 }
             }
-		}
-		displayIngredients();
-	}
+        }
+        displayIngredients();
+    }
 </script>
 
 <script>
-	$('#likeform').click(function(event) {
-		event.preventDefault();
-		$.ajax({
-			type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-			url         : '/likerecipe', // the url where we want to POST
-			data		: { 'recipeid' : $('input[name=recipeid]').val() },
-			encode      : true
-		}).done(function(){
+    $('#likeform').click(function(event) {
+        event.preventDefault();
+        $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : '/likerecipe', // the url where we want to POST
+            data		: { 'recipeid' : $('input[name=recipeid]').val() },
+            encode      : true
+        }).done(function(){
             if(window.state == 'true'){
                 window.state = 'false';
                 window.likes = parseInt(window.likes)-1;
@@ -185,33 +184,33 @@
                 window.likes = parseInt(window.likes)+1;
             }
             document.getElementById("plike").innerHTML = "Added to: <b>"+ window.likes + " Cookbooks</b><br>";
-		});
-	});
+        });
+    });
 </script>
 
 <script type="text/javascript">
-	function displayInstructions() {
-	    document.getElementById("btnInstructions").style.color = "brown";
+    function displayInstructions() {
+        document.getElementById("btnInstructions").style.color = "brown";
         document.getElementById("btnIngredients").style.color = "rosybrown";
 
-		var p = document.getElementById('rdinfo');
-		p.innerHTML = "";
-		p.innerHTML = '<b>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins<br></b>';
-		p.innerHTML += '<%= recipe.instructions %>';
+        var p = document.getElementById('rdinfo');
+        p.innerHTML = "";
+        p.innerHTML = '<b>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins<br></b>';
+        p.innerHTML += '<%= recipe.instructions %>';
     }
 </script>
 
 <script type="text/javascript">
-	function displayIngredients() {
+    function displayIngredients() {
         document.getElementById("btnInstructions").style.color = "rosybrown";
         document.getElementById("btnIngredients").style.color = "brown";
 
-		var p = document.getElementById('rdinfo');
+        var p = document.getElementById('rdinfo');
         p.innerHTML = "";
-		<% recipe.ingredients.forEach(function(ing,i) {%>
-			p.innerHTML += "<li>" + '<%= ing.name %>' + ": " + '<%= Math.round(ing.amount * 100) / 100 %>' + " " + '<%= ing.unitLong %>' + "</li>";
-		<% }); %>
-	}
+        <% recipe.ingredients.forEach(function(ing,i) {%>
+        p.innerHTML += "<li>" + '<%= ing.name %>' + ": " + '<%= Math.round(ing.amount * 100) / 100 %>' + " " + '<%= ing.unitLong %>' + "</li>";
+        <% }); %>
+    }
 </script>
 
 <script>
@@ -224,5 +223,7 @@
         }
     }
 </script>
+
+</body>
 
 </html>
