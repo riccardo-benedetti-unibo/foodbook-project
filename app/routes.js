@@ -112,7 +112,7 @@ module.exports = function(app, passport) {
                         res.render('../public/ejs/recipe.ejs', {
                             user : req.session.name,
                             recipe : recipe,
-                            likestate : user.cookbookContains(req.body.recipeid), // check if this recipe is already into the user cookbook to set the like button
+                            likestate : user.cookbookContains(req.param('recipeid')), // check if this recipe is already into the user cookbook to set the like button
                             avgRating : recipe.getUpdatedAvgRating(), // get the recipe average rating
                             userRate : recipe.getUserRate(req.session.email) // check if the user has already voted the recipe to set the stars lighting
                         });
