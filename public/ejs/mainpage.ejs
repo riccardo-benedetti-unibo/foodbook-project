@@ -99,7 +99,7 @@
             <% for(var i=0; i<pages; i++){ %>
 				<a href="/mainpage" id="aPag<%= i %>" onclick="location.href=this.href+'?currentpage='+i+'&keywords='+keywords; return false;"><%= i %></a>
             <% } %>
-			<a href="/mainpage?currentpage="+(currentpage+1) id="aNext" onclick="location.href=this.href+'?currentpage='+(currentpage+1)+'&keywords='+keywords; return false;">Next &raquo;</a>
+			<a href="/mainpage?currentpage="+<%=currentpage+1%> id="aNext" onclick="location.href=this.href+'?currentpage='+(currentpage+1)+'&keywords='+keywords; return false;">Next &raquo;</a>
 		</div>
 	</div>
 </div>
