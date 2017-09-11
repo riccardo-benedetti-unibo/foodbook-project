@@ -100,7 +100,7 @@ module.exports = function(app, passport) {
     // RECIPE DETAIL PAGE ROUTE =================================
     // display recipe detail page ===============================
     // ==========================================================
-	app.post('/recipe', function(req, res){
+	app.get('/recipe', function(req, res){
 		var Recipe = require('../models/recipe');
 		Recipe.findById(req.param('recipeid'), function (err, recipe){ // get the clicked recipe from db
 			if (req.session.email) {
