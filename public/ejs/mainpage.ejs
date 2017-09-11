@@ -2,16 +2,15 @@
 <!doctype html>
 <html>
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Recipe Dashboard</title>
 	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
 </head>
 
 <body onload="javascript:init()">
 <div class="container">
-	<div class="row" style="border-bottom: none">
+	<div class="row rowNoBorderBottom">
 		<div class="menuContainer" id="menuMobile">
             <% if(user){ %>
 			<div class="col-2">
@@ -26,11 +25,11 @@
 			<div class="col-2">
 				<a href="/logout">Logout</a>
 			</div>
-			<div class="col-4" style="float: right; border: none;">
-				<text>
-					Logged as:</br>
-					<b><%= user %></b>
-				</text>
+			<div class="col-4 colNoBorder">
+				<span>
+					Logged as:<br />
+					<strong><%= user %></strong>
+				</span>
 			</div>
             <% } else { %>
 			<div class="col-2">
@@ -42,14 +41,14 @@
 			<div class="col-2">
 				<a href="/analytics">Analytics</a>
 			</div>
-			<div class="col-6" style="float: right; border: none;">
-				<text>
-					Please, sign in to </br> access your Cookbook
-				</text>
+			<div class="col-6 colNoBorder">
+				<span>
+					Please, sign in to <br /> access your Cookbook
+				</span>
 			</div>
             <% } %>
-			<div class="icon" style="float: right; border: none;">
-				<a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveHandler()">&#9776;</a>
+			<div class="icon">
+				<a href="javascript:void(0);" onclick="responsiveHandler()">&#9776;</a>
 			</div>
 		</div>
 	</div>
