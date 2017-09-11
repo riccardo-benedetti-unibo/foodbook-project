@@ -94,7 +94,7 @@
 
 	<div class="row" style="display: flex">
 		<div class="recipeNavPage" id="recipeNavPage">
-			<a href="/mainpage?keywords='<%keywords%>'" id="aPrev">&laquo; Prev</a>
+			<a href="/mainpage?page='<%=currentpage-1%>'&keywords='<%=keywords%>'" id="aPrev">&laquo; Prev</a>
 			<input type="hidden" name="page" value="<%= currentpage-1 %>"/>
 			<input type="hidden" name="keywords" value="<%= keywords %>"/>
             <% var pages = (npages < 10) ? npages : 9 %>
