@@ -771,6 +771,7 @@ h1 {
     font-size: 30px;
     color: rosybrown;
     text-align: center;
+    font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
