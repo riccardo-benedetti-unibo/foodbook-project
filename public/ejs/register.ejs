@@ -2,9 +2,8 @@
 <!doctype html>
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Registration</title>
 	<link href="../css/foodbook.css" rel="stylesheet" type="text/css">
 </head>
@@ -12,8 +11,8 @@
 <body>
 <div class="container">
 	<div class="foodbookForm">
-		<div class="row" style="border-bottom: none; padding: 0;">
-			<div class="col-12" style="text-align: center; padding-top: 40px">
+		<div class="row rowNoBorderBottom">
+			<div class="col-12 colAlertMsg">
                 <% if (message.length > 0) { %>
 				<div class="alert alert-danger"><strong><%= message %></strong></div>
                 <% } %>
@@ -21,39 +20,39 @@
 		</div>
 
 		<form id="register-form" action="/register" method="post">
-			<div class="row" style="border-top:none; border-bottom: none; padding-top: 0; padding-bottom: 0;">
+			<div class="row rowNoBorderBottom" style="padding-top: 0; padding-bottom: 0;">
 				<div class="col-2 formLabel">
-					<strong><label for="completename">Complete name: </label></strong>
+					<strong><label>Complete name: </label></strong>
 				</div>
 				<div class="col-4 formTextbox">
 					<input type="text" class="form-control" name="completename" required>
 				</div>
 				<div class="col-2 formLabel">
-					<strong><label for="email">Email: </label></strong>
+					<strong><label>Email: </label></strong>
 				</div>
 				<div class="col-4 formTextbox">
 					<input type="text" class="form-control" name="email" required>
 				</div>
 			</div>
 
-			<div class="row" style="border-top:none;border-bottom: none; padding-top: 0; padding-bottom: 0;">
+			<div class="row rowNoBorderBottom rowNoBorderTop" style="padding-top: 0; padding-bottom: 0;">
 				<div class="col-2 formLabel">
-					<strong><label for="password">Password: </label></strong>
+					<strong><label>Password: </label></strong>
 				</div>
 				<div class="col-4 formTextbox">
 					<input type="password" class="form-control" name="password" required>
 				</div>
 				<div class="col-2 formLabel">
-					<strong><label for="password2">Confirm Password: </label></strong>
+					<strong><label>Confirm Password: </label></strong>
 				</div>
 				<div class="col-4 formTextbox">
 					<input type="password" class="form-control" name="password2" required>
 				</div>
 			</div>
 
-			<div class="row" style="border-top:none;border-bottom: none; padding-top: 0;">
+			<div class="row rowNoBorderBottom rowNoBorderTop" style="padding-top: 0;">
 				<div class="col-2 formLabel">
-					<strong><label for="birthyear">Birth Year: </label></strong>
+					<strong><label>Birth Year: </label></strong>
 				</div>
 				<div class="col-3 formTextbox" style="padding-bottom: 15px">
 					<select name="birthyear" class="form-control" id="birthyear" required></select>
@@ -61,16 +60,16 @@
 				<div class="col-7">
 					<div class="formRadio">
 						<input type="radio" name="gender" id="genderM" value="male" checked/>
-						<label for="genderM">Male</label>
+						<label>Male</label>
 					</div>
 					<div class="formRadio">
 						<input type="radio" name="gender" id="genderF" value="female"/>
-						<label for="genderF">Female</label>
+						<label>Female</label>
 					</div>
 				</div>
 			</div>
 
-			<div class="row" style="border-top:none; padding-bottom: 40px;">
+			<div class="row rowNoBorderTop" style="padding-bottom: 40px;">
 				<div class="col-6">
 					<div class="formButton" style="background-color:#04B404">
 						<a href="#" onclick="if(validateForm()){ document.getElementById('register-form').submit();}">Submit</a>
@@ -85,7 +84,7 @@
 		</form>
 	</div>
 </div>
-</body>
+
 
 <script>
     var min = new Date().getFullYear()-99,
@@ -120,7 +119,7 @@
         if (password != password2) {
             alert("Mismatch between password fields");
             return false;
-		}
+        }
         if (birthyear == -1) {
             alert("Select a valid birth year value");
             return false;
@@ -128,5 +127,7 @@
         return true;
     }
 </script>
+
+</body>
 
 </html>
