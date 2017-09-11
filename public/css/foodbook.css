@@ -354,13 +354,8 @@ body {
     margin-right: 0;
 }
 
-.recipeContainer a:hover img {
+.recipeContainer a:hover figure {
     transform: scale(1.15);
-}
-
-.recipeContainer figure {
-    margin: 0;
-    overflow: hidden;
 }
 
 .recipeContainer figcaption {
@@ -368,7 +363,7 @@ body {
     color: brown;
 }
 
-.recipeContainer img {
+.recipeContainer figure {
     margin: 5%;
     border-radius: 5%;
     max-width: 90%;
