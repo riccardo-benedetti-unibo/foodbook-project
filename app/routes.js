@@ -102,7 +102,7 @@ module.exports = function(app, passport) {
     // ==========================================================
 	app.post('/recipe', function(req, res){
 		var Recipe = require('../models/recipe');
-		Recipe.findById(req.body.recipeid, function (err, recipe){ // get the clicked recipe from db
+		Recipe.findById(req.param('recipeid'), function (err, recipe){ // get the clicked recipe from db
 			if (req.session.email) {
 				var User = require('../models/user');
 				User.findById(req.session.email, function (err, user){ //
