@@ -112,7 +112,6 @@
         }
 
         for(var i = fromPage; i <= toPage; i++){
-            document.getElementById('iPag'+(i-fromPage)).value = i;
             document.getElementById('aPag'+(i-fromPage)).innerText = i;
             if(i == currentPage){
                 document.getElementById('aPag'+(i-fromPage)).className = 'active';
