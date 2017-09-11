@@ -96,7 +96,7 @@
 		<div class="recipeNavPage" id="recipeNavPage">
 			<a href="/mainpage" id="aPrev" onclick="location.href=this.href+'?page='+(currentpage-1)+'&keywords='+keywords; return false;">&laquo; Prev</a>
             <% var pages = (npages < 10) ? npages : 9 %>
-            <% for(var i=0; i<pages; i++){ %>
+            <% for(var i=1; i<=pages; i++){ %>
 				<a href="/mainpage" id="aPag<%= i %>" onclick="location.href=this.href+'?page='+i+'&keywords='+keywords; return false;"><%= i %></a>
             <% } %>
 			<a href="/mainpage" id="aNext" onclick="location.href=this.href+'?page='+(currentpage+1)+'&keywords='+keywords; return false;">Next &raquo;</a>
@@ -133,7 +133,6 @@
         }
 
         for(var i = fromPage; i <= toPage; i++){
-            document.getElementById('iPag'+(i-fromPage)).value = i;
             document.getElementById('aPag'+(i-fromPage)).innerText = i;
             if(i == currentPage){
                 document.getElementById('aPag'+(i-fromPage)).className = 'active';
