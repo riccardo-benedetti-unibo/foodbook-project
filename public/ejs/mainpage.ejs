@@ -53,9 +53,9 @@
 		</div>
 	</div>
 
-	<div class="row" style="border-bottom: none">
+	<div class="row rowNoBorderBottom">
 		<div class="searchContainer">
-			<div class="col-12" style="border: none">
+			<div class="col-12 colNoBorder">
 				<form method="get" action="/mainpage">
 					<strong> Search by ingredient:   </strong>
 					<input type="text" id="searchInput" class="searchInput" name="keywords" maxlength="120"><input type="submit" value="SEARCH" class="searchButton">
@@ -75,13 +75,14 @@
 							<% r.ingredients.forEach(function(ingr,j) {%>
 							<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
 							<% }); %>
+							
 							<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
-							<picture>
-								<img src='<%= r.image %>' alt="">
-								<figcaption>
-									<%= r.title %>
-								</figcaption>
-							</picture>
+
+							<img src='<%= r.image %>' alt="">
+							<figcaption>
+								<%= r.title %>
+							</figcaption>
+
 						</a>
 					</form>
 				</li>
