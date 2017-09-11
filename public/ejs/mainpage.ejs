@@ -66,12 +66,11 @@
 
 	<div class="row rowNoBorderBottom">
 		<div class="recipeContainer">
-			<h1><i>Recipe Dashboard</i></h1>
+			<em>Recipe Dashboard</em>
 			<ul>
 			<% recipes.forEach(function(r,i) {%>
 				<li>
 					<a href="/recipe?recipeid=<%=r.id%>" class="recipeLink">
-
 						<figure>
 							<img src='<%= r.image %>' alt="">
 							<figcaption>
