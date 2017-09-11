@@ -55,15 +55,15 @@
 	</div>
 
 	<div class="rcontainer">
-		<div class="row" style="border-bottom: none; border-top: none">
+		<div class="row rowNoBorderBottom rowNoBorderTop">
 			<div class="rheader">
 				<div class="col-9 rheaderinfo">
-					<h1><i><%= recipe.title %></i></h1>
-					<p id="plike">Added to: <b><%= recipe.likes %> Cookbooks</b></p>
+					<h1><%= recipe.title %></h1>
+					<p id="plike">Added to: <strong><%= recipe.likes %> Cookbooks</strong></p>
                     <% if(isNaN(avgRating)){ %>
 						<p id="prating">Not yet voted</p>
                     <% }else{ %>
-						<p id="prating">Average rating: <b><%= Math.round(avgRating * 100) / 100 %></b> of 5 <b>Stars</b></p>
+						<p id="prating">Average rating: <strong><%= Math.round(avgRating * 100) / 100 %></strong> of 5 <strong>Stars</strong></p>
                     <% } %>
 				</div>
 				<div class="col-3 rheaderlike">
@@ -80,7 +80,7 @@
 		</div>
 
 		<div class="rbody">
-			<div class="row" style="border-bottom: none; border-top: none">
+			<div class="row rowNoBorderBottom rowNoBorderTop">
 				<div class="col-6 rbodyimage">
 					<figure>
 						<img src='<%= recipe.image %>' alt="">
@@ -101,7 +101,7 @@
 		</div>
 
         <% if(user){ %>
-		<div class="row" style="border-top: none;border-bottom: none">
+		<div class="row rowNoBorderBottom rowNoBorderTop">
 			<div class="col-12 rdstars">
 				<strong>Rate this recipe: </strong>
 			</div>
@@ -123,7 +123,7 @@
 		</div>
         <% } %>
 
-		<div class="row" style="border-top: none"></div>
+		<div class="row rowNoBorderTop"></div>
 	</div>
 </div>
 
@@ -183,7 +183,7 @@
                 window.state = 'true';
                 window.likes = parseInt(window.likes)+1;
             }
-            document.getElementById("plike").innerHTML = "Added to: <b>"+ window.likes + " Cookbooks</b><br>";
+            document.getElementById("plike").innerHTML = "Added to: <strong>"+ window.likes + " Cookbooks</strong><br>";
         });
     });
 </script>
@@ -195,7 +195,7 @@
 
         var p = document.getElementById('rdinfo');
         p.innerHTML = "";
-        p.innerHTML = '<b>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins<br></b>';
+        p.innerHTML = '<strong>Preparation time: ' + '<%= recipe.readyInMinutes %>' + ' mins<br /></strong>';
         p.innerHTML += '<%= recipe.instructions %>';
     }
 </script>
