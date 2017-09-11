@@ -64,7 +64,7 @@
 		</div>
 	</div>
 
-	<div class="row" style="border-bottom: none">
+	<div class="row rowNoBorderBottom">
 		<div class="recipeContainer">
 			<h1><i>Recipe Dashboard</i></h1>
 			<ul>
@@ -75,14 +75,14 @@
 							<% r.ingredients.forEach(function(ingr,j) {%>
 							<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
 							<% }); %>
-							
+
 							<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
 
-							<img src='<%= r.image %>' alt="">
-							<figcaption>
-								<%= r.title %>
-							</figcaption>
-
+							<figure src='<%= r.image %>' alt="">
+								<figcaption>
+                                    <%= r.title %>
+								</figcaption>
+							</figure>
 						</a>
 					</form>
 				</li>
@@ -114,7 +114,7 @@
 		</div>
 	</div>
 </div>
-</body>
+
 
 <script>
     function init() {
@@ -125,31 +125,31 @@
 
         if(currentPage == 1){
             document.getElementById('aPrev').className = 'not-active';
-		}
-		if(currentPage == nPages){
+        }
+        if(currentPage == nPages){
             document.getElementById('aNext').className = 'not-active';
-		}
+        }
 
         var fromPage = 1, toPage;
-		if(nPages < 10){
-		    toPage = nPages;
+        if(nPages < 10){
+            toPage = nPages;
         } else {
-		    if(currentPage > 4){
-		        fromPage = currentPage - 4;
-			}
+            if(currentPage > 4){
+                fromPage = currentPage - 4;
+            }
             toPage = fromPage + 8;
             if(toPage > nPages){
                 toPage = nPages;
             }
-		}
+        }
 
-		for(var i = fromPage; i <= toPage; i++){
-		    document.getElementById('iPag'+(i-fromPage)).value = i;
+        for(var i = fromPage; i <= toPage; i++){
+            document.getElementById('iPag'+(i-fromPage)).value = i;
             document.getElementById('aPag'+(i-fromPage)).innerText = i;
             if(i == currentPage){
                 document.getElementById('aPag'+(i-fromPage)).className = 'active';
-			}
-		}
+            }
+        }
     }
 </script>
 
@@ -163,5 +163,7 @@
         }
     }
 </script>
+
+</body>
 
 </html>
