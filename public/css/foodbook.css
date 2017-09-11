@@ -416,14 +416,19 @@ body {
 
 /* Form Container and Components (Sign in & Register pages) */
 
+.foodbookForm .row {
+    padding: 2vw;
+    min-height: 5vw;
+}
+
 .foodbookForm [class*="col-"]{
     border: none;
     padding: 1vw;
 }
 
-.foodbookForm .row {
-    padding: 2vw;
-    min-height: 5vw;
+.foodbookForm .colAlertMsg{
+    text-align: center;
+    padding-top: 40px
 }
 
 input.form-control {
@@ -443,6 +448,10 @@ input.form-control {
     border-radius: 15px;
     width: 100%;
     height: 43px;
+}
+
+.formLabelCentered {
+    text-align: center;
 }
 
 .formButton a {
@@ -526,6 +535,11 @@ select.form-control {
 
 .formRadio input:focus ~ label:before {
     box-shadow: 0 0 0 3px #999;
+}
+
+.registerLink {
+    color: brown;
+    background-color: burlywood
 }
 
 @media screen and (min-width: 768px) {

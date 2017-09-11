@@ -12,7 +12,7 @@
 <div class="container">
 	<div class="foodbookForm">
 		<div class="row rowNoBorderBottom">
-			<div class="col-12" style="text-align: center; padding-top: 40px">
+			<div class="col-12 colAlertMsg">
                 <% if (message.length > 0) { %>
 				<div class="alert alert-danger"><strong><%= message %></strong></div>
                 <% } %>
@@ -51,10 +51,10 @@
 
 		<div class="row rowNoBorderTop">
 			<div class="col-12">
-				<div class="formLabel" style="text-align: center">
+				<div class="formLabel formLabelCentered">
 					<strong>
 						<label>Need a Foodbook account? </label>
-						<a href="/register" style="color: brown; background-color: burlywood"><strong>REGISTER</strong></a>
+						<a href="/register" class="registerLink"><strong>REGISTER</strong></a>
 					</strong>
 				</div>
 			</div>
