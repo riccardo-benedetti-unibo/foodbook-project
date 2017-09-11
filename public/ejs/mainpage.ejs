@@ -70,22 +70,15 @@
 			<ul>
 			<% recipes.forEach(function(r,i) {%>
 				<li>
-					<form name="form<%= i %>" action="/recipe" method="post">
-						<a href="#" class="recipeLink" onclick="document.forms['form<%= i %>'].submit(); return false;">
-							<% r.ingredients.forEach(function(ingr,j) {%>
-							<input type="hidden" class="recipeIngr<%= i %>" name="recipeingr" value="<%= ingr.name %>" />
-							<% }); %>
+					<a href="/recipe?recipeid<%=r.id%>" class="recipeLink">
 
-							<input type="hidden" class="recipeInfo" name="recipeid" value="<%= r._id %>" />
-
-							<figure>
-								<img src='<%= r.image %>' alt="">
-								<figcaption>
-                                    <%= r.title %>
-								</figcaption>
-							</figure>
-						</a>
-					</form>
+						<figure>
+							<img src='<%= r.image %>' alt="">
+							<figcaption>
+                                <%= r.title %>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 			<% }) %>
 			</ul>
